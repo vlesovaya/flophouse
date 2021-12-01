@@ -1,2 +1,5 @@
+/* адрес контейнер */
 .footer__organizer {
+  max-width: 100%;
+  box-sizing: border-box;
 }

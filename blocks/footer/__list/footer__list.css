@@ -1,3 +1,4 @@
 /* список */
 .footer__list {
+  list-style: none;
 }
