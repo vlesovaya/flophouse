@@ -1,0 +1,4 @@
+/* иконка  рядом с сылкой */
+.footer__icon {
+  background-image: url(../../../images/footer_exit.svg);
+}

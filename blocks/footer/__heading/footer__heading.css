@@ -1,0 +1,11 @@
+/* заголовок */
+.footer__heading {
+  font-size: 32px;
+  line-height: 36px;
+  /* identical to box height, or 112% */
+  letter-spacing: -0.01em;
+  text-transform: lowercase;
+  /* dark primary */
+  color: #3b3748;
+  font-style: normal;
+}

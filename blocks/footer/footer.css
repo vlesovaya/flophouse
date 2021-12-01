@@ -1,0 +1,7 @@
+/* подвал */
+.footer {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ebe9ed;
+}
