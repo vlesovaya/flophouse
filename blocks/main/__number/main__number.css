@@ -1,0 +1,16 @@
+.main__number {
+    grid-area: main__number;
+    width: 77px;
+    margin: 0;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 740px) {
+    .main__number {
+        width: 68px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
