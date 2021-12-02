@@ -1,0 +1,10 @@
+.form-container__step {
+  margin: 0;
+  padding: 0;
+  grid-area: grid-step;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.33;
+}
+

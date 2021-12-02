@@ -114,6 +114,106 @@
         </div>
     </div>
 </template>
+<template id="choose-category">
+    <div class="form-container main__central-block">
+        <p class="form-container__step">шаг 1&nbsp;из&nbsp;4</p>
+        <div class="form-container__info">
+          <h2 class="form-container__title">выберите категорию</h2>
+        </div>
+          <form action="#" class="form-container__form">
+            <ul class="form-container__list">
+              <li>
+                <div class="form-container__item">
+                  <label class="form-container__label form-container__label_type_radio" for="food">кафе/бар/ресторан</label>
+                  <input class="form-container__radio" type="radio" id="food" name="choose-category">
+                </div>
+              </li>
+              <li>
+                <div class="form-container__item form-container_checked">
+                <label class="form-container__label form-container__label_type_radio" for="education">мастер-класс/лекция</label>
+                <input class="form-container__radio" type="radio" id="education" name="choose-category" checked>
+                  </div>
+              </li>
+              <li class="form-container__item">
+                <label class="form-container__label form-container__label_type_radio" for="party">посиделки/вечеринка</label>
+                <input class="form-container__radio" type="radio" id="party" name="choose-category"
+                >
+              </li>
+              <li class="form-container__item">
+                <label class="form-container__label form-container__label_type_radio" for="other">другое</label>
+                <input class="form-container__radio" type="radio" id="other" name="choose-category"
+                >
+              </li>
+            </ul>
+            <div class="main__button-bar">
+              <button type="reset" id="choose-category-reset" class="button form-container__btn">отмена</button>
+              <button type="submit" id="choose-category-submit" class="button form-container__btn">далее</button>
+            </div>
+          </form>
+      </div>
+  </template>
+  <template id="bar">
+      <div class="form-container main__central-block">
+          <p class="form-container__step">шаг 2&nbsp;из&nbsp;4</p>
+          <div class="form-container__info">
+            <h2 class="form-container__title">заполните форму</h2>
+            <p class="form-container__text">Для участия вы&nbsp;можете выбрать:</p>
+            <ul class="form-container__options">
+                <li class="form-container__option">определенную позицию из&nbsp;меню</li>
+                <li class="form-container__option">группу позиций</li>
+                <li class="form-container__option">процент от&nbsp;продаж определенных позиций или всего меню</li>
+            </ul>
+          </div>
+            <form action="#" class="form-container__form">
+              <ul class="form-container__list ">
+                  <li class ="form-container__chosen">
+                    <div class="form-container__item form-container_checked">
+                      <label class="form-container__label form-container__label_type_radio" for="food">кафе/бар/ресторан</label>
+                      <input class="form-container__radio" type="radio" id="food_chosen" name="choose-category" checked>
+                    </div>
+                  </li>
+                  <li>
+                    <label for="city" class="form-container__label form-container__label_type_text">город</label>
+                    <div class="form-container__item form-container__item_theme_gray">
+                      <select class="form-container__select form-container__disabled" id="city" name="city">
+                        <option value="" disabled selected>выберите из списка</option>
+                        <option value="Москва">Москва</option>
+                        <option value="Санкт-Петербург">Санкт-Петербург</option>
+                      </select>
+                    </div>
+                </li>
+                <li>
+                  <label for="place-name" class="form-container__label form-container__label_type_text">название заведения</label>
+                  <div class="form-container__item form-container__item_theme_gray">
+                    <input class="form-container__text-input" type="text" placeholder="введите название заведения" id="place-name" name="place-name" required>
+                  </div>
+                  </li>
+                <li>
+                  <label for="contact-name" class="form-container__label form-container__label_type_text">контактное лицо</label>
+                  <div class="form-container__item form-container__item_theme_gray">
+                    <input class="form-container__text-input" type="text" placeholder="введите ФИО" id="contact-name" name="contact-name" minlength="5" required>
+                  </div>
+                 </li>
+                <li>
+                  <label for="contact-phone" class="form-container__label form-container__label_type_text">телефон для связи с&nbsp;организатором</label>
+                  <div class="form-container__item form-container__item_theme_gray">
+                    <input class="form-container__text-input" type="tel" value="+7(" id="contact-phone" name="contact-phone" required>
+                  </div>
+                </li>
+                <li>
+                  <label for="desc" class="form-container__label form-container__label_type_text">описание</label>
+                  <div class="form-container__item form-container__item_theme_gray">
+                    <textarea class="form-container__text-input form-container__textarea" placeholder="Укажите, что из&nbsp;меню будет принимать участие в&nbsp;акции" id="desc" name="desc"></textarea>
+                  </div>
+                 </li>
+              </ul>
+              <div class="main__button-bar">
+                <button type="reset" id="bar-reset" class="button form-container__btn">отмена</button>
+                <button type="submit" id="bar-submit" class="button form-container__btn">далее</button>
+              </div>
+            </form>
+      </div>
+      </template>
 <script src="page/index.js"></script>
 </body>
 </html>
