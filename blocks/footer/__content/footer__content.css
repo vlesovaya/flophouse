@@ -1,0 +1,7 @@
+/* блок контейнер */
+.footer__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}

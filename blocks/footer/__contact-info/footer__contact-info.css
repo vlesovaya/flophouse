@@ -1,0 +1,5 @@
+.footer__contact-info {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 - 40px / 3);
+}

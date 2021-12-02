@@ -1,5 +1,8 @@
 /* иконка  рядом с сылкой */
 .footer__icon {
+  position: absolute;
+  top: 0;
+  right: -28px;
   background-image: url(../../../images/footer_exit.svg);
   background-repeat: no-repeat;
   width: 22px;
