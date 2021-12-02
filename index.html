@@ -28,18 +28,9 @@
         </div>
     </div>
 </header>
-<main class="main">
-    <h1 class="main__title"></h1>
+<main class="main main__central-block">
+    <h1 class="main__title">стать участником</h1>
     <section class="main__info">
-        <h2 class="main__participation"></h2>
-        <ol class="main__steps">
-            <li class="main__list-item"><div class="main__list-info"><p class="main__number">1</p><p class="main__category"></p><p class="main__desc"></p></div></li>
-            <li class="main__list-item"><div class="main__list-info"><p class="main__number">2</p><p class="main__category"></p><p class="main__desc"></p></div></li>
-            <li class="main__list-item"><div class="main__list-info"><p class="main__number">3</p><p class="main__category"></p><p class="main__desc"></p></div></li>
-            <li class="main__list-item"><div class="main__list-info"><p class="main__number">4</p><p class="main__category"></p><p class="main__desc"></p></div></li>
-            <li class="main__list-item"><div class="main__list-info"><p class="main__number">5</p><p class="main__category"></p><p class="main__desc"></p></div></li>
-        </ol>
-        <button type="button" class="button main__button">заполнить форму</button>
     </section>
 </main>
 <footer class="footer">
@@ -79,6 +70,152 @@
         </div>
     </div>
 </footer>
+<template id="welcome-screen-template">
+    <div class="main__welcome-screen-container">
+        <h2 class="main__subtitle">как участвовать?</h2>
+        <ol class="main__steps">
+            <li class="main__list-item">
+                <p class="main__number">1</p>
+                <p class="main__category">выбор категории</p>
+                <p class="main__description">Определите, как вы хотите
+                    поддержать акцию: продавать напитки, блюда, провести
+                    мастер-класс или каким-то другим способом</p>
+            </li>
+            <li class="main__list-item">
+                <p class="main__number">2</p>
+                <p class="main__category">фото и описание</p>
+                <p class="main__description">Подготовьте описание и фото вашего
+                    заведения. Это нужно для создания карточки в нашем каталоге
+                    событий </p>
+            </li>
+            <li class="main__list-item">
+                <p class="main__number">3</p>
+                <p class="main__category">ссылки и соцсети</p>
+                <p class="main__description">Опубликуйте ссылку на вашу карточку
+                    в соцсетях, расскажите у себя на сайте, чтобы больше людей
+                    узнали о вашем участии</p>
+            </li>
+            <li class="main__list-item">
+                <p class="main__number">4</p>
+                <p class="main__category">координатор</p>
+                <p class="main__description">Далее с вами свяжется координатор
+                    акции, который будет помогать по любым вопросам до и во
+                    время акции</p>
+            </li>
+            <li class="main__list-item">
+                <p class="main__number">5</p>
+                <p class="main__category">перевод средств</p>
+                <p class="main__description">После акции переведите собранные
+                    пожертвования в Ночлежку через сайт или по безналичному
+                    расчету</p>
+            </li>
+        </ol>
+        <div class="main__button-bar">
+            <button class="button main__button" type="button">заполнить форму
+            </button>
+        </div>
+    </div>
+</template>
+<template id="choose-category">
+    <div class="form-container main__central-block">
+        <p class="form-container__step">шаг 1&nbsp;из&nbsp;4</p>
+        <div class="form-container__info">
+          <h2 class="form-container__title">выберите категорию</h2>
+        </div>
+          <form action="#" class="form-container__form">
+            <ul class="form-container__list">
+              <li>
+                <div class="form-container__item">
+                  <label class="form-container__label form-container__label_type_radio" for="food">кафе/бар/ресторан</label>
+                  <input class="form-container__radio" type="radio" id="food" name="choose-category">
+                </div>
+              </li>
+              <li>
+                <div class="form-container__item form-container_checked">
+                <label class="form-container__label form-container__label_type_radio" for="education">мастер-класс/лекция</label>
+                <input class="form-container__radio" type="radio" id="education" name="choose-category" checked>
+                  </div>
+              </li>
+              <li class="form-container__item">
+                <label class="form-container__label form-container__label_type_radio" for="party">посиделки/вечеринка</label>
+                <input class="form-container__radio" type="radio" id="party" name="choose-category"
+                >
+              </li>
+              <li class="form-container__item">
+                <label class="form-container__label form-container__label_type_radio" for="other">другое</label>
+                <input class="form-container__radio" type="radio" id="other" name="choose-category"
+                >
+              </li>
+            </ul>
+            <div class="main__button-bar">
+              <button type="reset" id="choose-category-reset" class="button form-container__btn">отмена</button>
+              <button type="submit" id="choose-category-submit" class="button form-container__btn">далее</button>
+            </div>
+          </form>
+      </div>
+  </template>
+  <template id="bar">
+      <div class="form-container main__central-block">
+          <p class="form-container__step">шаг 2&nbsp;из&nbsp;4</p>
+          <div class="form-container__info">
+            <h2 class="form-container__title">заполните форму</h2>
+            <p class="form-container__text">Для участия вы&nbsp;можете выбрать:</p>
+            <ul class="form-container__options">
+                <li class="form-container__option">определенную позицию из&nbsp;меню</li>
+                <li class="form-container__option">группу позиций</li>
+                <li class="form-container__option">процент от&nbsp;продаж определенных позиций или всего меню</li>
+            </ul>
+          </div>
+            <form action="#" class="form-container__form">
+              <ul class="form-container__list ">
+                  <li class ="form-container__chosen">
+                    <div class="form-container__item form-container_checked">
+                      <label class="form-container__label form-container__label_type_radio" for="food">кафе/бар/ресторан</label>
+                      <input class="form-container__radio" type="radio" id="food_chosen" name="choose-category" checked>
+                    </div>
+                  </li>
+                  <li>
+                    <label for="city" class="form-container__label form-container__label_type_text">город</label>
+                    <div class="form-container__item form-container__item_theme_gray">
+                      <select class="form-container__select form-container__disabled" id="city" name="city">
+                        <option value="" disabled selected>выберите из списка</option>
+                        <option value="Москва">Москва</option>
+                        <option value="Санкт-Петербург">Санкт-Петербург</option>
+                      </select>
+                    </div>
+                </li>
+                <li>
+                  <label for="place-name" class="form-container__label form-container__label_type_text">название заведения</label>
+                  <div class="form-container__item form-container__item_theme_gray">
+                    <input class="form-container__text-input" type="text" placeholder="введите название заведения" id="place-name" name="place-name" required>
+                  </div>
+                  </li>
+                <li>
+                  <label for="contact-name" class="form-container__label form-container__label_type_text">контактное лицо</label>
+                  <div class="form-container__item form-container__item_theme_gray">
+                    <input class="form-container__text-input" type="text" placeholder="введите ФИО" id="contact-name" name="contact-name" minlength="5" required>
+                  </div>
+                 </li>
+                <li>
+                  <label for="contact-phone" class="form-container__label form-container__label_type_text">телефон для связи с&nbsp;организатором</label>
+                  <div class="form-container__item form-container__item_theme_gray">
+                    <input class="form-container__text-input" type="tel" value="+7(" id="contact-phone" name="contact-phone" required>
+                  </div>
+                </li>
+                <li>
+                  <label for="desc" class="form-container__label form-container__label_type_text">описание</label>
+                  <div class="form-container__item form-container__item_theme_gray">
+                    <textarea class="form-container__text-input form-container__textarea" placeholder="Укажите, что из&nbsp;меню будет принимать участие в&nbsp;акции" id="desc" name="desc"></textarea>
+                  </div>
+                 </li>
+              </ul>
+              <div class="main__button-bar">
+                <button type="reset" id="bar-reset" class="button form-container__btn">отмена</button>
+                <button type="submit" id="bar-submit" class="button form-container__btn">далее</button>
+              </div>
+            </form>
+      </div>
+      </template>
 <script src="page/index.js"></script>
 </body>
 </html>

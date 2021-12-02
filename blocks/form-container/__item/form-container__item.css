@@ -1,0 +1,15 @@
+.form-container__item {
+  box-sizing: border-box;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  margin:  0 0 12px 0;
+  position: relative;
+  width: 100%;
+  max-width: 530px;
+  border: 2px solid #3B3748;
+  border-radius: 26px;
+  text-align: start;
+  overflow: hidden;
+  cursor: pointer;
+}

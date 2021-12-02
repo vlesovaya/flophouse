@@ -1,0 +1,10 @@
+.form-container__radio {
+  visibility: hidden;
+  width: 24px;
+  height: 24px;
+  margin: 12px 24px 0 0;
+}
+
+.form-container__input:checked~.form-container__label{
+background-color: aquamarine;
+}
