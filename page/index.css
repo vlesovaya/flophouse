@@ -21,4 +21,5 @@
 @import url(../blocks/form-container/__item/_theme/form-container__item_theme_gray.css);
 @import url(../blocks/form-container/__text-input/form-container__text-input.css);
 @import url(../blocks/form-container/__textarea/form-container__textarea.css);
+@import url(../blocks/form-container/__disabled/form-container__disabled.css);
 
