@@ -1,0 +1,19 @@
+.form-container__select {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  appearance: none;
+  background-image: url(../../../images/select-icon.svg);
+  background-repeat: no-repeat;
+  background-position: right 19.41px top 50%;
+  background-size: 13.17px 7.59px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #96949E;
+}

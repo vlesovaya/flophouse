@@ -1,0 +1,20 @@
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 531px;
+  grid-template-rows: repeat(2, fit-content);
+  grid-template-areas: "grid-step grid-step"
+                        "grid-info grid-form";
+  row-gap: 12px;
+  column-gap: 40px;
+  max-width: 880px;
+}
+
+@media screen and (max-width: 740px) {
+  .form-container{
+    grid-template-columns: 1fr;
+    grid-template-areas: "grid-step"
+                         "grid-info"
+                         "grid-form";
+    max-width: 530px;
+  }
+}

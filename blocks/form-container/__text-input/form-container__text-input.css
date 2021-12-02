@@ -1,0 +1,8 @@
+.form-container__text-input {
+  border: none;
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 18px;
+  line-height: 1.33;
+  outline: none;
+}
