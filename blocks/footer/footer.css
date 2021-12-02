@@ -1,8 +1,6 @@
 /* подвал */
 .footer {
   max-width: 100%;
-  display: flex;
-  justify-content: space-between;
   background-color: #ebe9ed;
   margin: 0 auto;
   padding: 0;

@@ -1,0 +1,7 @@
+/* блок соц сети */
+.footer__social {
+  width: 310px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}

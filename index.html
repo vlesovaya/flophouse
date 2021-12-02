@@ -81,11 +81,11 @@
 
     <!-- нижний колонтикул (подвал сайта) -->
     <footer class="footer">
-      <div class="footer__illustration"></div>
-      <!--  контакты организатора  -->
-      <nav class="footer__content">
-        <address class="footer__contact-info">
-          <h3 class="footer__heading">организатор:</h3>
+      <div class="footer__shell">
+        <div class="footer__illustration"></div>
+        <!--  контакты организатора  -->
+        <div class="footer__organizer">
+          <h2 class="footer__heading">организатор:</h2>
           <ul class="footer__list">
             <li class="footer__links">
               <a href="https://homeless.ru" target="_blank" class="footer__link"
@@ -102,10 +102,10 @@
               >
             </li>
           </ul>
-        </address>
+        </div>
         <!-- сделано с любовью (партнеры)-->
-        <address class="footer__contact-info">
-          <h3 class="footer__heading">сделано с&nbsp;любовью:</h3>
+        <div class="footer__partners">
+          <h2 class="footer__heading">сделано с&nbsp;любовью:</h2>
           <ul class="footer__list">
             <li class="footer__links">
               <a
@@ -132,10 +132,10 @@
               ></a>
             </li>
           </ul>
-        </address>
+        </div>
         <!-- соц сети -->
-        <address class="footer__contact-info">
-          <h3 class="footer__heading">мы&nbsp;в&nbsp;соцсетях:</h3>
+        <div class="footer__social">
+          <h2 class="footer__heading">мы&nbsp;в&nbsp;соцсетях:</h2>
           <ul class="footer__list-social">
             <li class="footer__social-link">
               <a
@@ -167,12 +167,12 @@
                 <img
                   class="footer__social-icon"
                   src="./images/vk.svg"
-                  alt="ВКонтакте"
+                  alt="vkontakte"
               /></a>
             </li>
           </ul>
-        </address>
-      </nav>
+        </div>
+      </div>
     </footer>
     <script src="page/index.js"></script>
   </body>

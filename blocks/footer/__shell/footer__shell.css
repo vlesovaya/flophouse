@@ -1,0 +1,8 @@
+/* контейнер */
+.footer__shell {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 40px 90px 40px;
+  margin: 0 auto;
+}

@@ -1,0 +1,8 @@
+/* партнеры с любовью */
+.footer__partners {
+  width: 427px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}

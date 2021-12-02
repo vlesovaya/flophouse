@@ -1,0 +1,8 @@
+/* блок организатора */
+.footer__organizer {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 310px;
+  padding: 0;
+}
