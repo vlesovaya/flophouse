@@ -7,7 +7,7 @@
     font-weight: 500;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 450px) {
     .main__number {
         width: 68px;
         font-size: 24px;
