@@ -1,3 +1,25 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
 @import url(../blocks/page/page.css);
+@import url(../blocks/form-container/form-container.css);
+@import url(../blocks/form-container/__step/form-container__step.css);
+@import url(../blocks/form-container/__title/form-container__title.css);
+@import url(../blocks/form-container/__form/form-container__form.css);
+@import url(../blocks/form-container/__info/form-container__info.css);
+@import url(../blocks/form-container/__list/form-container__list.css);
+@import url(../blocks/form-container/__radio/form-container__radio.css);
+@import url(../blocks/form-container/__item/form-container__item.css);
+@import url(../blocks/form-container/__label/form-container__label.css);
+@import url(../blocks/form-container/__label/_type/form-container__label_type_radio.css);
+@import url(../blocks/form-container/_checked/form-container_checked.css);
+@import url(../blocks/form-container/__btn/form-container__btn.css);
+@import url(../blocks/form-container/__text/form-container__text.css);
+@import url(../blocks/form-container/__options/form-container__options.css);
+@import url(../blocks/form-container/__chosen/form-container__chosen.css);
+@import url(../blocks/form-container/__label/_type/form-container__label_type_text.css);
+@import url(../blocks/form-container/__select/form-container__select.css);
+@import url(../blocks/form-container/__item/_theme/form-container__item_theme_gray.css);
+@import url(../blocks/form-container/__text-input/form-container__text-input.css);
+@import url(../blocks/form-container/__textarea/form-container__textarea.css);
+@import url(../blocks/form-container/__disabled/form-container__disabled.css);
+
