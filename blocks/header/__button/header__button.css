@@ -1,0 +1,22 @@
+.header__button {
+    width: 153px;
+    height: 48px;
+    opacity: 1;
+    transition: 0.4s linear;
+}
+
+.header__button:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__button {
+        border-radius: 0;
+        width: 20px;
+        height: 20px;
+        background-image: url(../../../images/burger-menu.svg);
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 0;
+    }
+}

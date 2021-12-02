@@ -2,6 +2,22 @@
 @import url(../vendor/fonts/fonts.css);
 @import url(../blocks/page/page.css);
 
+@import url(../blocks/button/button.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__container/header__container.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__city/header__city.css);
+@import url(../blocks/header/__map-sign/header__map-sign.css);
+@import url(../blocks/header/__city-name/header__city-name.css);
+@import url(../blocks/header/__nav/header__nav.css);
+@import url(../blocks/header/__menu/header__menu.css);
+@import url(../blocks/header/__menu-item/header__menu-item.css);
+@import url(../blocks/header/__togo/header__togo.css);
+@import url(../blocks/header/__like/header__like.css);
+@import url(../blocks/header/__want-to-go/header__want-to-go.css);
+@import url(../blocks/header/__button/header__button.css);
+
 @import url(../blocks/main/main.css);
 @import url(../blocks/main/__central-block/main__central-block.css);
 @import url(../blocks/main/__title/main__title.css);
@@ -36,3 +52,4 @@
 @import url(../blocks/form-container/__text-input/form-container__text-input.css);
 @import url(../blocks/form-container/__textarea/form-container__textarea.css);
 @import url(../blocks/form-container/__disabled/form-container__disabled.css);
+
