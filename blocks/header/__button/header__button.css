@@ -1,6 +1,13 @@
 .header__button {
     width: 153px;
     height: 48px;
+    opacity: 1;
+    transition: 0.4s linear;
+}
+
+.header__button:hover {
+    cursor: pointer;
+    opacity: .7;
 }
 
 @media screen and (max-width: 1024px) {

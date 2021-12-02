@@ -5,6 +5,13 @@
     width: 24px;
     height: 24px;
     margin-right: 8px;
+    opacity: 1;
+    transition: 0.4s linear;
+}
+
+.header__like:hover {
+    opacity: .7;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
