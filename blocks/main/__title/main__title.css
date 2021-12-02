@@ -1,5 +1,5 @@
 .main__title {
-    margin: 0;
+    margin: 0 0 40px;
     font-size: 96px;
     line-height: 1;
     font-weight: 500;
@@ -8,7 +8,7 @@
 @media screen and (max-width: 740px) {
     .main__title {
         max-width: 383px;
-        margin: 20px auto 0;
+        margin: 20px auto 40px;
         font-size: 64px;
         line-height: 1;
     }

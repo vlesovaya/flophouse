@@ -7,13 +7,14 @@
 @media screen and (max-width: 740px) {
     .main__subtitle {
         max-width: 383px;
-        margin: 40px auto 20px;
+        margin: 0 auto 24px;
     }
 }
 
 @media screen and (max-width: 450px) {
     .main__subtitle {
         max-width: 320px;
+        margin: 0 auto 20px;
         font-size: 32px;
         line-height: 36px;
     }
