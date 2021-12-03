@@ -9,12 +9,22 @@
   max-width: 880px;
 }
 
+@media screen and (max-width: 960px) {
+  .form-container{
+    max-width: calc(100% - 40px);
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+  }
+  
+}
+
 @media screen and (max-width: 740px) {
   .form-container{
+    max-width: unset;
     grid-template-columns: 1fr;
     grid-template-areas: "grid-step"
                          "grid-info"
                          "grid-form";
-    max-width: 530px;
+    width: 100%;
   }
 }
