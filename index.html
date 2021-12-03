@@ -216,6 +216,84 @@
             </form>
       </div>
       </template>
+<template id="event-form">
+    <div class="form-container main__central-block">
+        <p class="form-container__step">шаг 2&nbsp;из&nbsp;4</p>
+        <div class="form-container__info">
+            <h2 class="form-container__title">заполните форму</h2>
+            <p class="form-container__text">Определитесь с типом мероприятия — лекция, консультация или мастер-класс.</p>
+            <p class="form-container__text">Когда люди будут покупать билеты, вам будут приходить уведомления на
+                электронную почту</p>
+        </div>
+        <form action="#" class="form-container__form">
+            <ul class="form-container__list ">
+                <li class ="form-container__chosen">
+                    <div class="form-container__item form-container_checked">
+                        <label class="form-container__label form-container__label_type_radio" for="event_chosen">
+                            мастер-класс/лекция
+                        </label>
+                        <input class="form-container__radio" type="radio" id="event_chosen" name="choose-category" checked>
+                    </div>
+                </li>
+                <li>
+                    <fieldset class="form-container__radio-field">
+                        <input class="form-container__radio form-container__radio_type_round" type="radio" value="онлайн" id="online-event" name="party-format">
+                        <label class="form-container__label form-container__label_type_round" for="online-event">онлайн</label>
+
+                        <input class="form-container__radio form-container__radio_type_round" type="radio" value="офлайн" id="offline-event" name="party-format">
+                        <label class="form-container__label form-container__label_type_round" for="offline-event">офлайн</label>
+                    </fieldset>
+                </li>
+                <li>
+                    <label for="event-city" class="form-container__label form-container__label_type_text">город</label>
+                    <div class="form-container__item form-container__item_theme_gray">
+                        <select class="form-container__select form-container__disabled" id="event-city" name="city">
+                            <option value="" disabled selected>выберите из списка</option>
+                            <option value="Москва">Москва</option>
+                            <option value="Санкт-Петербург">Санкт-Петербург</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <label for="event-name" class="form-container__label form-container__label_type_text">название
+                        мероприятия</label>
+                    <div class="form-container__item form-container__item_theme_gray">
+                        <input class="form-container__text-input" type="text" placeholder="введите название"
+                               id="event-name" name="event-name" required>
+                    </div>
+                </li>
+                <li>
+                    <label for="event-date" class="form-container__label form-container__label_type_text">дата
+                        проведения</label>
+                    <div class="form-container__item form-container__item_theme_gray">
+                        <input class="form-container__text-input form-container__disabled" type="text"
+                               placeholder="укажите дату в формате дд.мм.гггг" onfocus="(this.type='date')"
+                               id="event-date" name="event-date" required>
+                    </div>
+                </li>
+                <li>
+                    <label for="event-contact-name"
+                           class="form-container__label form-container__label_type_text">контактное лицо</label>
+                    <div class="form-container__item form-container__item_theme_gray">
+                        <input class="form-container__text-input" type="text" placeholder="введите ФИО"
+                               id="event-contact-name" name="contact-name" minlength="5" required>
+                    </div>
+                </li>
+                <li>
+                    <label for="event-contact-phone"
+                           class="form-container__label form-container__label_type_text">номер телефона для связи с организатором</label>
+                    <div class="form-container__item form-container__item_theme_gray">
+                        <input class="form-container__text-input" type="tel" id="event-contact-phone" value="+7(" name="contact-phone" required>
+                    </div>
+                </li>
+            </ul>
+            <div class="main__button-bar">
+                <button type="reset" id="event-bar-reset" class="button form-container__btn">отмена</button>
+                <button type="submit" id="event-bar-submit" class="button form-container__btn">далее</button>
+            </div>
+        </form>
+    </div>
+</template>
 <script src="page/index.js"></script>
 </body>
 </html>
