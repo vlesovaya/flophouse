@@ -216,6 +216,59 @@
             </form>
       </div>
       </template>
+      <template id="obshepitForm">
+        <div class="form-container main__central-block">
+          <p class="form-container__step">шаг 3&nbsp;из&nbsp;4</p>
+          <div class="form-container__info">
+            <h2 class="form-container__title">укажите контакты и&nbsp;часы работы</h2>
+            <p class="form-container__text">Эти данные появятся в&nbsp;описании карточки вашего мероприятия в&nbsp;нашем каталоге событий</p>
+          </div>
+            <form class="form-container__form" action="#">
+              <ul class="form-container__list ">
+                <li>
+                  <label class="form-container__label form-container__label_type_text" for="working-hours">часы работы заведения</label>
+                  <div class="form-container__item form-container__item_theme_gray">
+                    <input class="form-container__text-input" type="text" placeholder="например: 10:00-13:00, 13:00-19:00" id="working-hours" name="working-hours" required>
+                  </div>
+                </li>
+                <li>
+                  <label class="form-container__label form-container__label_type_text" for="institution-address">адрес заведения</label>
+                  <div class="form-container__item form-container__item_theme_gray">
+                    <input class="form-container__text-input" type="text" placeholder="каждый адрес с новой строки" id="institution-address" name="institution-address" required>
+                  </div>
+                </li>
+                <li>
+                  <label class="form-container__label form-container__label_type_text" for="institution-phone-number">номер телефона заведения</label>
+                  <div class="form-container__item form-container__item_theme_gray">
+                    <input class="form-container__text-input" type="tel" value="+7(" id="institution-phone-number" name="institution-phone-number" required>
+                  </div>
+                </li>
+                <li>
+                  <label class="form-container__label form-container__label_type_text" for="link-site">ссылка на сайт</label>
+                  <div class="form-container__item form-container__item_theme_gray">
+                    <input class="form-container__text-input" type="url" value="https://" id="link-site" name="link-site" required>
+                  </div>
+                </li>
+                <li>
+                  <label class="form-container__label form-container__label_type_text" for="link-socNetwork">ссылки на соцсети</label>
+                  <div class="form-container__item form-container__item_theme_gray">
+                    <textarea class="form-container__text-input" placeholder="каждую ссылку с новой строки" id="link-socNetwork" name="link-socNetwork" rows="1" required></textarea>
+                  </div>
+                </li>
+                <li>
+                  <label class="form-container__label form-container__label_type_text" for="invitation-description">описание</label>
+                  <div class="form-container__item form-container__item_theme_gray">
+                    <textarea class="form-container__text-input form-container__textarea-obshepit" placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон"
+                     id="invitation-description" name="invitation-description"></textarea>
+                  </div>
+                </li>
+              </ul>
+              <div class="main__button-bar">
+                <button class="button form-container__btn form-container_color_white" type="reset" id="obshepitForm-reset">назад</button>
+                <button class="button form-container__btn form-container_color_purple" type="submit" id="obshepitForm-submit">далее</button>
+              </div>
+        </div>
+      </template>
 <script src="page/index.js"></script>
 </body>
 </html>

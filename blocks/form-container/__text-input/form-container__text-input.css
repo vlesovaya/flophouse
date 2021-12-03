@@ -6,3 +6,10 @@
   line-height: 1.33;
   outline: none;
 }
+
+@media screen and (max-width: 600px) {
+  .form-container__text-input {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
