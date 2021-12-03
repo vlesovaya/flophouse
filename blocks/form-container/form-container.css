@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 740px) {
   .form-container{
-    
+    max-width: unset;
     grid-template-columns: 1fr;
     grid-template-areas: "grid-step"
                          "grid-info"
