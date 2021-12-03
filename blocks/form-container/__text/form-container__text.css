@@ -4,3 +4,11 @@
   font-size: 18px;
   line-height: 24px;
 }
+
+@media screen and (max-width: 740px) { 
+.form-container__text {
+  margin: 0 auto;
+  width: 100%;
+  max-width: calc(100% - 40px);
+  } 
+}
