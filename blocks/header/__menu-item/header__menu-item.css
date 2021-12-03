@@ -1,0 +1,33 @@
+.header__menu-item {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "TT Firs Neue";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #3B3748;
+    opacity: 1;
+    transition: 0.4s linear;
+}
+
+.header__menu-item:hover {
+    opacity: .7;
+}
+
+.header__menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+@media screen and (max-width: 1280px) {
+    .header__menu-item:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1124px) {
+    .header__menu-item {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
