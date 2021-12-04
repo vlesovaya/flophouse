@@ -1,10 +1,9 @@
 .form-container__radio {
-  visibility: hidden;
-  width: 24px;
-  height: 24px;
-  margin: 12px 24px 0 0;
+  display: none;
 }
 
-.form-container__input:checked~.form-container__label{
-background-color: aquamarine;
+.form-container__radio:checked+.form-container__label-wrapper {
+  background-color: #7100FF;
+  color: #FCFAF7;
+  border: none;
 }

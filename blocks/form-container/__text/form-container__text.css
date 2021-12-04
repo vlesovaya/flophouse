@@ -5,11 +5,11 @@
   line-height: 24px;
 }
 
-@media screen and (max-width: 740px) {
-  .form-container__text {
-    max-width: calc(100% - 40px);
-    margin: 0 auto 0 auto;
-    font-size: 16px;
-    line-height: 20px;
-  }
+
+@media screen and (max-width: 740px) { 
+.form-container__text {
+  margin: 0 auto 20px;
+  width: 100%;
+  max-width: calc(100% - 40px);
+  } 
 }
