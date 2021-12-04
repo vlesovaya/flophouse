@@ -7,6 +7,8 @@
   box-shadow: inset 0px -1px 0px #EBE9ED;
   text-align: start;
   color: #96949E;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 740px) { 
