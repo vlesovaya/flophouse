@@ -533,6 +533,67 @@
         </form>
     </div>
 </template>
+<template id="event-form-step-3">
+    <div class="form-container main__central-block">
+        <p class="form-container__step">шаг 3&nbsp;из&nbsp;4</p>
+        <div class="form-container__info">
+            <h2 class="form-container__title">укажите контакты и&nbsp;часы работы</h2>
+            <p class="form-container__text">Эти данные появятся в&nbsp;описании карточки вашего мероприятия в&nbsp;нашем каталоге событий</p>
+        </div>
+        <form class="form-container__form" action="#">
+            <ul class="form-container__list ">
+                <li>
+                    <label class="form-container__label form-container__label_type_text"
+                           for="event-working-hours">время проведения</label>
+                    <div class="form-container__item form-container__item_theme_gray">
+                        <input class="form-container__text-input" type="text"
+                               placeholder="например: 18:00-22:00" id="event-working-hours"
+                               name="event-working-hours" required>
+                    </div>
+                </li>
+                <li>
+                    <label class="form-container__label form-container__label_type_text"
+                           for="event-address">адрес заведения</label>
+                    <div class="form-container__item form-container__item_theme_gray">
+                        <input class="form-container__text-input" type="text"
+                               placeholder="каждый адрес с новой строки" id="event-address"
+                               name="event-address" required>
+                    </div>
+                </li>
+                <li>
+                    <label class="form-container__label form-container__label_type_text"
+                           for="event-phone-number">номер телефона заведения</label>
+                    <div class="form-container__item form-container__item_theme_gray">
+                        <input class="form-container__text-input" type="tel" value="+7("
+                               id="event-phone-number" name="event-phone-number" required>
+                    </div>
+                </li>
+                <li>
+                    <label class="form-container__label form-container__label_type_text"
+                           for="event-price">стоимость участия</label>
+                    <div class="form-container__item form-container__item_theme_gray">
+                        <input class="form-container__text-input" type="number" placeholder="укажите стоимость в рублях"
+                               id="event-price" name="event-price" required>
+                    </div>
+                </li>
+                <li>
+                    <label class="form-container__label form-container__label_type_text"
+                           for="event-description">описание</label>
+                    <div class="form-container__item form-container__item_theme_gray">
+                    <textarea class="form-container__text-input" placeholder="Напишите небольшой анонс вашего местер-класса или лекции. Чем мероприятие будет полезно, чему посвящено"
+                              id="event-description" name="event-description"></textarea>
+                    </div>
+                </li>
+            </ul>
+            <div class="main__button-bar">
+                <button class="button form-container__btn form-container_color_white" type="reset"
+                        id="event-reset">назад</button>
+                <button class="button form-container__btn form-container_color_purple" type="submit"
+                        id="event-submit">далее</button>
+            </div>
+        </form>
+    </div>
+</template>
 <script src="page/index.js"></script>
 </body>
 </html>
