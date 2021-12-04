@@ -126,29 +126,21 @@
             <ul class="form-container__list">
                 <li>
                     <div class="form-container__item">
-                        <label class="form-container__label form-container__label_type_radio" for="food">
-                            <input class="form-container__radio" id="food" name="choose-category" type="radio">
-                            <span class="form-container__label-wrapper">кафе/бар/ресторан</span>
-                        </label>
+                        <input class="form-container__radio" id="food" name="choose-category" type="radio">
+                        <label class="form-container__label form-container__label_type_radio" for="food">кафе/бар/ресторан</label>
                     </div>
                 </li>
-                <li>
-                    <label class="form-container__label form-container__label_type_radio" for="education">
-                        <input checked class="form-container__radio" id="education" name="choose-category" type="radio">
-                        <span class="form-container__label-wrapper">мастер-класс/лекция</span>
-                    </label>
+                <li class="form-container__item">
+                    <input checked class="form-container__radio" id="education" name="choose-category" type="radio">
+                    <label class="form-container__label form-container__label_type_radio" for="education">мастер-класс/лекция</label>
                 </li>
                 <li class="form-container__item">
-                    <label class="form-container__label form-container__label_type_radio" for="party">
-                        <input class="form-container__radio" id="party" name="choose-category" type="radio">
-                        <span class="form-container__label-wrapper">посиделки/вечеринка</span>
-                    </label>
+                    <input class="form-container__radio" type="radio" id="party" name="choose-category">
+                    <label class="form-container__label form-container__label_type_radio" for="party">посиделки/вечеринка</label>
                 </li>
                 <li class="form-container__item">
-                    <label class="form-container__label form-container__label_type_radio" for="other">
-                        <input class="form-container__radio" id="other" name="choose-category" type="radio">
-                        <span class="form-container__label-wrapper">другое</span>
-                    </label>
+                    <input class="form-container__radio" id="other" name="choose-category" type="radio">
+                    <label class="form-container__label form-container__label_type_radio" for="other">другое</label>
                 </li>
             </ul>
             <div class="main__button-bar">
@@ -219,7 +211,7 @@
               </div>
             </form>
       </div>
-      </template> 
+      </template>
       <template id="obshepitForm">
         <div class="form-container main__central-block">
           <p class="form-container__step">шаг 3&nbsp;из&nbsp;4</p>
@@ -271,7 +263,7 @@
                 <button class="button form-container__btn form-container_color_white" type="reset" id="obshepitForm-reset">назад</button>
                 <button class="button form-container__btn form-container_color_purple" type="submit" id="obshepitForm-submit">далее</button>
               </div>
-            </form>  
+            </form>
         </div>
       </template>
 <template id="event-form">
