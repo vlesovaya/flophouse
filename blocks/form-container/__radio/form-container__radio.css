@@ -7,7 +7,7 @@
   right: 0;
 }
 
-.form-container__radio:checked + .form-container__label {
+.form-container__radio:checked + .form-container__label_type_choosing-event {
   background-color: #7100FF;
   color: #FCFAF7;
   border: none;
