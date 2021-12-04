@@ -269,7 +269,7 @@
         </form>
     </div>
 </template>
-<!--<template id="event-form">-->
+<template id="event-form-step-2">
 <div class="form-container main__central-block">
     <p class="form-container__step">шаг 2&nbsp;из&nbsp;4</p>
     <div class="form-container__info">
@@ -282,20 +282,22 @@
         <ul class="form-container__list ">
             <li class ="form-container__chosen">
                 <div class="form-container__item form-container_checked">
-                    <input class="form-container__radio" type="radio" id="event_chosen" name="choose-category" checked>
-                    <label class="form-container__label form-container__label_type_radio" for="event_chosen">
-                        мастер-класс/лекция
-                    </label>
-                    <!--                        <input class="form-container__radio" type="radio" id="event_chosen" name="choose-category" checked>-->
+                    <input class="form-container__radio" type="radio" id="event-chosen-step-2"
+                           name="event-form-step-2" checked>
+                    <label class="form-container__label form-container__label_type_radio" for="event-chosen-step-2">
+                        мастер-класс/лекция</label>
                 </div>
             </li>
             <li>
-                <fieldset class="form-container__radio-field form-container__radio-field_type_event">
-                    <input class="form-container__radio form-container__radio_type_round" type="radio" value="онлайн" id="online-event" name="party-format">
-                    <label class="form-container__label form-container__label_type_round" for="online-event">онлайн</label>
+                <fieldset class="form-container__radio-field form-container__radio-field_type_input-padding">
+                    <input
+                            class="form-container__radio form-container__radio_type_round" type="radio"
+                           value="онлайн" id="online-event" name="party-format" checked>
+                    <label
+                            class="form-container__label form-container__label_type_round form-container__label_type_event" for="online-event">онлайн</label>
 
                     <input class="form-container__radio form-container__radio_type_round" type="radio" value="офлайн" id="offline-event" name="party-format">
-                    <label class="form-container__label form-container__label_type_round" for="offline-event">офлайн</label>
+                    <label class="form-container__label form-container__label_type_round form-container__label_type_event" for="offline-event">офлайн</label>
                 </fieldset>
             </li>
             <li>
@@ -347,7 +349,7 @@
         </div>
     </form>
 </div>
-<!--</template>-->
+</template>
 </template>
 <template id="party-form-step-2">
     <div class="form-container main__central-block">
