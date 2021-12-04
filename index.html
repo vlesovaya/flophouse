@@ -138,8 +138,7 @@
               </li>
               <li class="form-container__item">
                 <label class="form-container__label form-container__label_type_radio" for="party">посиделки/вечеринка</label>
-                <input class="form-container__radio" type="radio" id="party" name="choose-category"
-                >
+                <input class="form-container__radio" type="radio" id="party" name="choose-category">
               </li>
               <li class="form-container__item">
                 <label class="form-container__label form-container__label_type_radio" for="other">другое</label>
@@ -212,6 +211,77 @@
               <div class="main__button-bar">
                 <button type="reset" id="bar-reset" class="button form-container__btn">отмена</button>
                 <button type="submit" id="bar-submit" class="button form-container__btn">далее</button>
+              </div>
+            </form>
+      </div>
+      </template>
+      <template id="party-form">
+        <div class="form-container main__central-block">
+          <p class="form-container__step">шаг 2&nbsp;из&nbsp;4</p>
+          <div class="form-container__info">
+            <h2 class="form-container__title">заполните форму</h2>
+            <p class="form-container__text">Организуйте свою посиделку, вечеринку или концерт.</p>
+            <p class="form-container__text">Пригласите друзей и&nbsp;тех, кто захочет помочь Ночлежке.</p>
+            <p class="form-container__text">Установите пожертвование, например кусочек пирога за&nbsp;любую комфортную сумму</p>
+          </div>
+            <form action="#" class="form-container__form">
+              <ul class="form-container__list ">
+                  <li class ="form-container__chosen">
+                    <div class="form-container__item form-container_checked">
+                      <label class="form-container__label form-container__label_type_radio" for="party_chosen">посиделки/вечеринка</label>
+                      <input class="form-container__radio" type="radio" id="party_chosen" name="choose-category" checked>
+                    </div>
+                  </li>
+                  <li>
+                    <label for="city" class="form-container__label form-container__label_type_text">город</label>
+                    <div class="form-container__item form-container__item_theme_gray">
+                      <select class="form-container__select form-container__disabled" id="party-city" name="city">
+                        <option value="" disabled selected>выберите из списка</option>
+                        <option value="Москва">Москва</option>
+                        <option value="Санкт-Петербург">Санкт-Петербург</option>
+                      </select>
+                    </div>
+                </li>
+                <li>
+                  <label for="place-name" class="form-container__label form-container__label_type_text">название мероприятия</label>
+                  <div class="form-container__item form-container__item_theme_gray">
+                    <input class="form-container__text-input" type="text" placeholder="введите название" id="party-name" name="party-name" required>
+                  </div>
+                </li>
+                <li>
+                  <fieldset class="form-container__radio-field">
+                    <input class="form-container__radio form-container__radio_type_round" type="radio" value="открытое мероприятие" id="party-format-open" name="party-format" checked>
+                    <label class="form-container__label form-container__label_type_round" for="party-format-open">открытое мероприятие</label>
+                    <p class="form-container__capture">адрес отобразим в карточке события</p>
+  
+                    <input class="form-container__radio form-container__radio_type_round" type="radio" value="закрытое мероприятие" id="party-format-close" name="party-format">
+                    <label class="form-container__label form-container__label_type_round" for="party-format-close">закрытое мероприятие</label>
+                    <p class="form-container__capture">адрес увидят только, те&nbsp;кому вы&nbsp;оправите ссылку на&nbsp;событие</p>
+  
+                  </fieldset>
+                </li>
+                <li>
+                  <label for="party-date" class="form-container__label form-container__label_type_text">дата проведения</label>
+                  <div class="form-container__item form-container__item_theme_gray">
+                    <input class="form-container__text-input form-container__disabled" type="text" placeholder="укажите дату в формате дд.мм.гггг" onfocus="(this.type='date')" id="party-date" name="party-date" required>
+                  </div>
+                 </li>
+                <li>
+                  <label for="contact-name" class="form-container__label form-container__label_type_text">контактное лицо</label>
+                  <div class="form-container__item form-container__item_theme_gray">
+                    <input class="form-container__text-input" type="text" placeholder="введите ФИО" id="party-contact-name" name="contact-name" minlength="5" required>
+                  </div>
+                 </li>
+                <li>
+                  <label for="contact-phone" class="form-container__label form-container__label_type_text">телефон для связи с&nbsp;организатором</label>
+                  <div class="form-container__item form-container__item_theme_gray">
+                    <input class="form-container__text-input" type="tel" value="+7(" id="party-contact-phone" name="contact-phone" required>
+                  </div>
+                </li>
+              </ul>
+              <div class="main__button-bar">
+                <button type="reset" id="party-bar-reset" class="button form-container__btn">отмена</button>
+                <button type="submit" id="party-bar-submit" class="button form-container__btn">далее</button>
               </div>
             </form>
       </div>
