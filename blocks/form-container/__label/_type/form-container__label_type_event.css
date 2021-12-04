@@ -1,0 +1,8 @@
+.form-container__label_type_event {
+    color: #3B3748;
+    margin-bottom: 40px;
+}
+
+.form-container__label_type_event:last-child {
+    margin-bottom: 0;
+}

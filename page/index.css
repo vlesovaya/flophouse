@@ -63,3 +63,5 @@
 @import url(../blocks/form-container/__label/_type/form-container__label_type_round.css);
 @import url(../blocks/form-container/__capture/form-container__capture.css);
 @import url(../blocks/form-container/__textarea/_size/form-container__textarea_size_s.css);
+@import url(../blocks/form-container/__radio-field/_type_event/form-container__radio-field_type_input-padding.css);
+@import url(../blocks/form-container/__label/_type/form-container__label_type_event.css);
