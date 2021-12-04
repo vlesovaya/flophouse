@@ -1,8 +1,13 @@
 .form-container__radio {
   display: none;
+    width: 24px;
+    height: 24px;
+    margin: 12px 24px 0 0;
+  position: absolute;
+  right: 0;
 }
 
-.form-container__radio:checked+.form-container__label-wrapper {
+.form-container__radio:checked + .form-container__label_type_radio {
   background-color: #7100FF;
   color: #FCFAF7;
   border: none;
