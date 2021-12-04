@@ -54,3 +54,7 @@
 @import url(../blocks/form-container/__disabled/form-container__disabled.css);
 @import url(../blocks/form-container/__label-wrapper/form-container__label-wrapper.css);
 
+@import url(../blocks/form-container/__radio-field/form-container__radio-field.css);
+@import url(../blocks/form-container/__radio/_type/form-container__radio_type_round.css);
+@import url(../blocks/form-container/__label/_type/form-container__label_type_round.css);
+@import url(../blocks/form-container/__capture/form-container__capture.css);
