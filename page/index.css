@@ -57,7 +57,6 @@
 @import url(../blocks/form-container/_color_white/form-container_color_white.css);
 @import url(../blocks/form-container/_color_purple/form-container_color_purple.css);
 
-
 @import url(../blocks/form-container/__radio-field/form-container__radio-field.css);
 @import url(../blocks/form-container/__radio/_type/form-container__radio_type_round.css);
 @import url(../blocks/form-container/__label/_type/form-container__label_type_round.css);
@@ -65,3 +64,18 @@
 @import url(../blocks/form-container/__textarea/_size/form-container__textarea_size_s.css);
 @import url(../blocks/form-container/__radio-field/_type_event/form-container__radio-field_type_input-padding.css);
 @import url(../blocks/form-container/__label/_type/form-container__label_type_event.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__shell/footer__shell.css);
+@import url(../blocks/footer/__illustration/footer__illustration.css);
+@import url(../blocks/footer/__content-container/footer__content-container.css);
+@import url(../blocks/footer/__block-info/footer__block-info.css);
+@import url(../blocks/footer/__heading/footer__heading.css);
+@import url(../blocks/footer/__email/footer__email.css);
+@import url(../blocks/footer/__list/footer__list.css);
+@import url(../blocks/footer/__links/footer__links.css);
+@import url(../blocks/footer/__link/footer__link.css);
+@import url(../blocks/footer/__icon/footer__icon.css);
+@import url(../blocks/footer/__list-social/footer__list-social.css);
+@import url(../blocks/footer/__social-link/footer__social-link.css);
+@import url(../blocks/footer/__social-icon/footer__social-icon.css);

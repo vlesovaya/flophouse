@@ -1,0 +1,15 @@
+/* контейнер для основного меню  */
+.footer__content-container {
+  width: 72%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 80px 40px 80px;
+}
+
+@media screen and (max-width: 1150px) {
+  .footer__content-container {
+    width: 100%;
+  }
+}

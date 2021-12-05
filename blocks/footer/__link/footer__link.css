@@ -1,0 +1,14 @@
+/* ссылка */
+.footer__link {
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #3b3748;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  opacity: 0.7;
+}
