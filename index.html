@@ -174,15 +174,13 @@
         </div>
         <form action="#" class="form-container__form">
             <ul class="form-container__list">
-                <li>
-                    <div class="form-container__item">
-                        <input class="form-container__radio" id="food" name="choose-category" type="radio">
-                        <label class="form-container__label form-container__label_type_radio" for="food">
+                <li class="form-container__item">
+                    <input checked class="form-container__radio" id="food" name="choose-category" type="radio">
+                    <label class="form-container__label form-container__label_type_radio" for="food">
                             кафе/бар/ресторан</label>
-                    </div>
                 </li>
                 <li class="form-container__item">
-                    <input checked class="form-container__radio" id="education" name="choose-category" type="radio">
+                    <input class="form-container__radio" id="education" name="choose-category" type="radio">
                     <label class="form-container__label form-container__label_type_radio" for="education">
                         мастер-класс/лекция</label>
                 </li>
@@ -203,7 +201,7 @@
         </form>
     </div>
 </template>
-<template id="bar">
+<template id="cafe-form-step-2">
     <div class="form-container main__central-block">
         <p class="form-container__step">шаг 2&nbsp;из&nbsp;4</p>
         <div class="form-container__info">
@@ -265,7 +263,7 @@
         </form>
     </div>
 </template>
-<template id="obshepitForm">
+<template id="cafe-form-step-3">
     <div class="form-container main__central-block">
         <p class="form-container__step">шаг 3&nbsp;из&nbsp;4</p>
         <div class="form-container__info">
@@ -413,7 +411,7 @@
             <ul class="form-container__list ">
                 <li class ="form-container__chosen">
                     <div class="form-container__item form-container_checked">
-                        <label class="form-container__label form-container__label_type_radio form-container_color_purple" for="party_chosen">посиделки/вечеринка</label>
+                        <label class="form-container__label form-container__label_type_radio form-container_color_purple" for="party-chosen-step-2">посиделки/вечеринка</label>
                         <input class="form-container__radio" type="radio" id="party-chosen-step-2" name="party-chosen-step-2" checked>
                     </div>
                 </li>
@@ -480,12 +478,6 @@
         </div>
         <form action="#" class="form-container__form">
             <ul class="form-container__list ">
-                <li class ="form-container__chosen">
-                    <div class="form-container__item form-container_checked">
-                        <label class="form-container__label form-container__label_type_radio form-container_color_purple" for="party_chosen">посиделки/вечеринка</label>
-                        <input class="form-container__radio" type="radio" id="party-chosen-step-3" name="party-chosen-step-3" checked>
-                    </div>
-                </li>
                 <li>
                     <label for="party-time" class="form-container__label form-container__label_type_text">время проведения</label>
                     <div class="form-container__item form-container__item_theme_gray">
@@ -644,7 +636,7 @@
         </form>
     </div>
 </template>
-<template id="form2-other">
+<template id="other-form-step-2">
   <div class="form-container main__central-block">
     <p class="form-container__step">шаг 2&nbsp;из&nbsp;4</p>
     <div class="form-container__info">
