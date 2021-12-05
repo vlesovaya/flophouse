@@ -24,43 +24,43 @@ function navigateFromChooseCategory() {
         case ('food'):
             return getCafeFormStep2();
         case ('education'):
-            return  getEventFormStep2();
+            return getEventFormStep2();
         case ('party'):
             return getPartyFormStep2();
         case ('other'):
-            return  getOtherFormStep2();
+            return getOtherFormStep2();
     }
 }
 
-function getCafeFormStep2(){
+function getCafeFormStep2() {
     return getFormById('#cafe-form-step-2', getCafeFormStep3, getChooseCategoryElement);
 }
 
-function getCafeFormStep3(){
+function getCafeFormStep3() {
     return getFormById('#cafe-form-step-3', getWelcomeScreenElement, getCafeFormStep2);
 }
 
-function getEventFormStep2(){
+function getEventFormStep2() {
     return getFormById('#event-form-step-2', getEventFormStep3, getChooseCategoryElement);
 }
 
-function getEventFormStep3(){
+function getEventFormStep3() {
     return getFormById('#event-form-step-3', getWelcomeScreenElement, getEventFormStep2);
 }
 
-function getPartyFormStep2(){
+function getPartyFormStep2() {
     return getFormById('#party-form-step-2', getPartyFormStep3, getChooseCategoryElement);
 }
 
-function getPartyFormStep3(){
+function getPartyFormStep3() {
     return getFormById('#party-form-step-3', getWelcomeScreenElement, getPartyFormStep2);
 }
 
-function getOtherFormStep2(){
+function getOtherFormStep2() {
     return getFormById('#other-form-step-2', getOtherFormStep3, getChooseCategoryElement);
 }
 
-function getOtherFormStep3(){
+function getOtherFormStep3() {
     return getFormById('#other-form-step-3', getWelcomeScreenElement, getOtherFormStep2);
 }
 

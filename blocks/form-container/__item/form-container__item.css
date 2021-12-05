@@ -3,7 +3,7 @@
     background-color: transparent;
     display: flex;
     justify-content: space-between;
-    margin:  0 0 12px 0;
+    margin: 0 0 12px 0;
     position: relative;
     width: 100%;
     max-width: 530px;
@@ -15,7 +15,7 @@
 }
 
 @media screen and (max-width: 740px) {
-    .form-container__item{
+    .form-container__item {
         margin: 0 auto 12px;
         width: 100%;
         max-width: calc(100% - 40px);

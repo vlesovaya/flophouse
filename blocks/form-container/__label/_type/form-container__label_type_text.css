@@ -1,11 +1,11 @@
 .form-container__label_type_text {
-  display:block;
-  margin: 32px 0 8px;
-  text-align: left;
-  padding: 0 24px;
-  color: #96949E;
+    display: block;
+    margin: 32px 0 8px;
+    text-align: left;
+    padding: 0 24px;
+    color: #96949E;
 }
 
-.form-container__label_type_text:first-of-type{
-  margin: 20px 0 8px;
+.form-container__label_type_text:first-of-type {
+    margin: 20px 0 8px;
 }
