@@ -147,8 +147,8 @@
                 </li>
             </ul>
             <div class="main__button-bar">
-                <button type="reset" id="choose-category-reset" class="button form-container__btn">отмена</button>
-                <button type="submit" id="choose-category-submit" class="button form-container__btn">далее</button>
+                <button type="reset" id="choose-category-reset" class="button form-container__btn form-container_color_white">отмена</button>
+                <button type="submit" id="choose-category-submit" class="button form-container__btn form-container_color_purple">далее</button>
             </div>
         </form>
     </div>
@@ -169,7 +169,7 @@
             <ul class="form-container__list ">
                 <li class ="form-container__chosen">
                     <div class="form-container__item form-container_checked">
-                        <label class="form-container__label form-container__label_type_radio" for="food">кафе/бар/ресторан</label>
+                        <label class="form-container__label form-container__label_type_radio form-container_color_purple" for="food">кафе/бар/ресторан</label>
                         <input class="form-container__radio" type="radio" id="food_chosen" name="choose-category" checked>
                     </div>
                 </li>
@@ -257,7 +257,7 @@
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="invitation-description">описание</label>
                     <div class="form-container__item form-container__item_theme_gray">
-                    <textarea class="form-container__text-input form-container__textarea-obshepit" placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон"
+                    <textarea class="form-container__text-input form-container__textarea_size_s" placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон"
                               id="invitation-description" name="invitation-description"></textarea>
                     </div>
                 </li>
@@ -344,12 +344,11 @@
             </li>
         </ul>
         <div class="main__button-bar">
-            <button type="reset" id="event-bar-reset" class="button form-container__btn">отмена</button>
-            <button type="submit" id="event-bar-submit" class="button form-container__btn">далее</button>
+            <button type="reset" id="event-bar-reset" class="button form-container__btn form-container_color_white">назад</button>
+            <button type="submit" id="event-bar-submit" class="button form-container__btn form-container_color_purple">далее</button>
         </div>
     </form>
 </div>
-</template>
 </template>
 <template id="party-form-step-2">
     <div class="form-container main__central-block">
@@ -364,7 +363,7 @@
             <ul class="form-container__list ">
                 <li class ="form-container__chosen">
                     <div class="form-container__item form-container_checked">
-                        <label class="form-container__label form-container__label_type_radio" for="party_chosen">посиделки/вечеринка</label>
+                        <label class="form-container__label form-container__label_type_radio form-container_color_purple" for="party_chosen">посиделки/вечеринка</label>
                         <input class="form-container__radio" type="radio" id="party-chosen-step-2" name="party-chosen-step-2" checked>
                     </div>
                 </li>
@@ -416,13 +415,12 @@
                 </li>
             </ul>
             <div class="main__button-bar">
-                <button type="reset" id="party-form-step-2-reset" class="button form-container__btn">отмена</button>
-                <button type="submit" id="party-form-step-2-submit" class="button form-container__btn">далее</button>
+                <button type="reset" id="party-form-step-2-reset" class="button form-container__btn form-container_color_white">назад</button>
+                <button type="submit" id="party-form-step-2-submit" class="button form-container__btn form-container_color_purple">далее</button>
             </div>
         </form>
     </div>
 </template>
-
 <template id="party-form-step-3">
     <div class="form-container main__central-block">
         <p class="form-container__step">шаг 3&nbsp;из&nbsp;4</p>
@@ -434,7 +432,7 @@
             <ul class="form-container__list ">
                 <li class ="form-container__chosen">
                     <div class="form-container__item form-container_checked">
-                        <label class="form-container__label form-container__label_type_radio" for="party_chosen">посиделки/вечеринка</label>
+                        <label class="form-container__label form-container__label_type_radio form-container_color_purple" for="party_chosen">посиделки/вечеринка</label>
                         <input class="form-container__radio" type="radio" id="party-chosen-step-3" name="party-chosen-step-3" checked>
                     </div>
                 </li>
@@ -482,8 +480,8 @@
                 </li>
             </ul>
             <div class="main__button-bar">
-                <button type="reset" id="party-form-step-3-reset" class="button form-container__btn">отмена</button>
-                <button type="submit" id="party-borm-step-3-submit" class="button form-container__btn">далее</button>
+                <button type="reset" id="party-form-step-3-reset" class="button form-container__btn form-container_color_white">назад</button>
+                <button type="submit" id="party-borm-step-3-submit" class="button form-container__btn form-container_color_purple">далее</button>
             </div>
         </form>
     </div>
@@ -529,8 +527,8 @@
                 </li>
             </ul>
             <div class="main__button-bar">
-                <button type="reset" id="other-form-step-3-reset" class="button form-container__btn">отмена</button>
-                <button type="submit" id="other-borm-step-3-submit" class="button form-container__btn">далее</button>
+                <button type="reset" id="other-form-step-3-reset" class="button form-container__btn form-container_color_white">назад</button>
+                <button type="submit" id="other-borm-step-3-submit" class="button form-container__btn form-container_color_purple">далее</button>
             </div>
         </form>
     </div>
@@ -582,7 +580,7 @@
                     <label class="form-container__label form-container__label_type_text"
                            for="event-description">описание</label>
                     <div class="form-container__item form-container__item_theme_gray">
-                    <textarea class="form-container__text-input" placeholder="Напишите небольшой анонс вашего местер-класса или лекции. Чем мероприятие будет полезно, чему посвящено"
+                    <textarea class="form-container__text-input form-container__textarea_size_s" placeholder="Напишите небольшой анонс вашего местер-класса или лекции. Чем мероприятие будет полезно, чему посвящено"
                               id="event-description" name="event-description"></textarea>
                     </div>
                 </li>
@@ -596,7 +594,7 @@
         </form>
     </div>
 </template>
-<template id="form2-other">-->
+<template id="form2-other">
   <div class="form-container main__central-block">
     <p class="form-container__step">шаг 2&nbsp;из&nbsp;4</p>
     <div class="form-container__info">
