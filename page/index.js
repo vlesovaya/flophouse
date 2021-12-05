@@ -28,7 +28,6 @@ addElementToMainInfo(getWelcomeScreenElement());
 
 const barForm = document.querySelector('#bar').cloneNode(true).content;
 const main = document.querySelector('.main');
-main.prepend(barForm);
 
 const barSubmit = document.querySelector('#bar-submit');
 
