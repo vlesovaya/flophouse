@@ -1,5 +1,7 @@
 const mainInfoContainer = document.querySelector('.main__info');
 
+// Get elements from templates
+
 function getWelcomeScreenElement() {
     const welcomeScreenTemplate = document.querySelector('#welcome-screen-template').content;
     const welcomeScreenElement = welcomeScreenTemplate.querySelector('.main__welcome-screen-container').cloneNode(true);
@@ -7,51 +9,94 @@ function getWelcomeScreenElement() {
     fillFormButton.addEventListener('click', function (evt) {
         evt.preventDefault();
         addElementToMainInfo(getChooseCategoryElement());
-    })
+    });
     return welcomeScreenElement;
-
 }
 
 function getChooseCategoryElement() {
-    const chooseCategoryTemplate = document.querySelector('#choose-category').content;
-    const chooseCategoryElement = chooseCategoryTemplate.querySelector('.form-container').cloneNode(true);
-    return chooseCategoryElement;
+    return getFormById('#choose-category', navigateFromChooseCategory, getWelcomeScreenElement);
 }
+
+function navigateFromChooseCategory() {
+    const formElement = document.querySelector('.form-container__form');
+    const checkedValue = getCheckedRadioButtonId(formElement, '.form-container__radio');
+    switch (checkedValue) {
+        case ('food'):
+            return getCafeFormStep2();
+        case ('education'):
+            return  getEventFormStep2();
+        case ('party'):
+            return getPartyFormStep2();
+        case ('other'):
+            return  getOtherFormStep2();
+    }
+}
+
+function getCafeFormStep2(){
+    return getFormById('#cafe-form-step-2', getCafeFormStep3, getChooseCategoryElement);
+}
+
+function getCafeFormStep3(){
+    return getFormById('#cafe-form-step-3', getWelcomeScreenElement, getCafeFormStep2);
+}
+
+function getEventFormStep2(){
+    return getFormById('#event-form-step-2', getEventFormStep3, getChooseCategoryElement);
+}
+
+function getEventFormStep3(){
+    return getFormById('#event-form-step-3', getWelcomeScreenElement, getEventFormStep2);
+}
+
+function getPartyFormStep2(){
+    return getFormById('#party-form-step-2', getPartyFormStep3, getChooseCategoryElement);
+}
+
+function getPartyFormStep3(){
+    return getFormById('#party-form-step-3', getWelcomeScreenElement, getPartyFormStep2);
+}
+
+function getOtherFormStep2(){
+    return getFormById('#other-form-step-2', getOtherFormStep3, getChooseCategoryElement);
+}
+
+function getOtherFormStep3(){
+    return getFormById('#other-form-step-3', getWelcomeScreenElement, getOtherFormStep2);
+}
+
+// Utils
 
 function addElementToMainInfo(element) {
     mainInfoContainer.removeChild(mainInfoContainer.firstChild);
     mainInfoContainer.appendChild(element);
 }
 
-addElementToMainInfo(getWelcomeScreenElement());
+function getFormById(formId, onSubmitElement, onResetElement) {
+    const template = document.querySelector(formId).content;
+    const templateElement = template.querySelector('.form-container').cloneNode(true);
+    const formElement = templateElement.querySelector('.form-container__form');
+    formElement.addEventListener('submit', function (evt) {
+        evt.preventDefault();
+        addElementToMainInfo(onSubmitElement());
+    });
+    formElement.addEventListener('reset', function (evt) {
+        evt.preventDefault();
+        addElementToMainInfo(onResetElement());
+    });
+    return templateElement;
+}
 
+function getCheckedRadioButtonId(form, radioButtonClass) {
+    let returnId;
+    let radioButtons = form.querySelectorAll(radioButtonClass);
 
-const barForm = document.querySelector('#bar').cloneNode(true).content;
-const main = document.querySelector('.main');
-
-const barSubmit = document.querySelector('#bar-submit');
-
-function addElementobshepitForm() {
-    const obshepitForm = document.querySelector('#obshepitForm').cloneNode(true).content;
-    const barForm = barSubmit.closest('.form-container');
-
-    const selectCity = document.querySelector('#city').value;
-    const placeName = document.querySelector('#place-name').value;
-    const contactName = document.querySelector('#contact-name').value;
-    const contactPhone = document.querySelector('#contact-phone').value;
-    const desc = document.querySelector('#desc').value;
-
-    if (selectCity.length == 0 || placeName.length == 0 || contactName.length == 5 || contactPhone.length == 11 || desc.length == 0) {
-        return false;
-    } else {
-        main.prepend(obshepitForm);
-        barForm.remove();
+    for (let index = 0; index < radioButtons.length; index++) {
+        if (radioButtons[index].checked) {
+            returnId = radioButtons[index].id;
+            break;
+        }
     }
+    return returnId;
 }
 
-
-function barFormSubmitHandler (evt) {
-    evt.preventDefault();
-}
-
-barSubmit.addEventListener('click', addElementobshepitForm, barFormSubmitHandler);
+addElementToMainInfo(getWelcomeScreenElement());
