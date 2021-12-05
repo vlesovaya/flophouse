@@ -2,11 +2,11 @@
     max-width: 1440px;
     min-height: 752px;
     padding: 40px;
-    box-sizing: border-box;
 }
 
 @media screen and (max-width: 740px) {
     .main {
-        padding: 0;
+        position: relative;
+        padding: 0 0 84px;
     }
 }

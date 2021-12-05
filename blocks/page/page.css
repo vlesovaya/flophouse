@@ -14,3 +14,10 @@
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
 }
+
+@media screen and (max-width: 740px) {
+  .page {
+    min-height: 100%;
+    position: relative;
+  }
+}
