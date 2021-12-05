@@ -6,7 +6,7 @@
 }
 
 .form-container__label_type_radio::after {
-    content:'';
+    content: '';
     background-image: url(../../../../images/check_icon.svg);
     background-repeat: no-repeat;
     background-position: center;

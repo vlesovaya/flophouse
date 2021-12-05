@@ -1,17 +1,17 @@
 .form-container__title {
-  margin: 0 auto;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 1.08;
-  letter-spacing: -0.01em;
-  text-transform: lowercase;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    text-transform: lowercase;
 }
 
 @media screen and (max-width: 740px) {
-  .form-container__title{
-    margin-bottom: 12px;
-    font-size: 32px;
-    width: 100%;
-    max-width: calc(100% - 40px);
-  }
+    .form-container__title {
+        margin-bottom: 12px;
+        font-size: 32px;
+        width: 100%;
+        max-width: calc(100% - 40px);
+    }
 }

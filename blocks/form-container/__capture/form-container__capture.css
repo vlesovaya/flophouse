@@ -1,12 +1,12 @@
 .form-container__capture {
-  margin: 12px 0 28px;
-  padding: 0 0 0 24px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.33;
+    margin: 12px 0 28px;
+    padding: 0 0 0 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.33;
 }
 
-.form-container__capture:last-of-type{
-  margin-bottom: 20px;
+.form-container__capture:last-of-type {
+    margin-bottom: 20px;
 }

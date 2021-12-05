@@ -1,9 +1,9 @@
 .form-container__radio_type_round {
-  margin: 0;
-  height: 1px;
-  width: 1px;
+    margin: 0;
+    height: 1px;
+    width: 1px;
 }
 
 .form-container__radio_type_round:checked + .form-container__label_type_round::after {
-  background-image: url(../../../../images/radio-checked.svg);
+    background-image: url(../../../../images/radio-checked.svg);
 }

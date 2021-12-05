@@ -1,20 +1,20 @@
 .form-container__radio-field {
-  margin: 0;
-  padding: 32px 0 0;
-  border: none;
-  border-top: 1px solid #EBE9ED;
-  border-bottom: 1px solid #EBE9ED;
-  box-shadow: inset 0px -1px 0px #EBE9ED;
-  text-align: start;
-  color: #96949E;
-  display: flex;
-  flex-direction: column;
+    margin: 0;
+    padding: 32px 0 0;
+    border: none;
+    border-top: 1px solid #EBE9ED;
+    border-bottom: 1px solid #EBE9ED;
+    box-shadow: inset 0px -1px 0px #EBE9ED;
+    text-align: start;
+    color: #96949E;
+    display: flex;
+    flex-direction: column;
 }
 
-@media screen and (max-width: 740px) { 
-  .form-container__radio-field {
-    margin: 0 auto;
-    width: 100%;
-    max-width: calc(100% - 40px);
-    } 
-  }
+@media screen and (max-width: 740px) {
+    .form-container__radio-field {
+        margin: 0 auto;
+        width: 100%;
+        max-width: calc(100% - 40px);
+    }
+}

@@ -1,19 +1,19 @@
 .form-container__step {
-  margin: 0;
-  padding: 0;
-  grid-area: grid-step;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.33;
-  width: 100%;
-  max-width: calc(100% - 40px);
+    margin: 0;
+    padding: 0;
+    grid-area: grid-step;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.33;
+    width: 100%;
+    max-width: calc(100% - 40px);
 }
 
 @media screen and (max-width: 740px) {
-  .form-container__step{
-    margin: 0 auto;
-    width: 100%;
-    max-width: calc(100% - 40px);
-  }
+    .form-container__step {
+        margin: 0 auto;
+        width: 100%;
+        max-width: calc(100% - 40px);
+    }
 }
