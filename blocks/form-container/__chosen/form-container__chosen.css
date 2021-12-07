@@ -1,4 +1,5 @@
 .form-container__chosen {
+    width: 100%;
     padding-bottom: 20px;
     box-shadow: inset 0px -1px 0px #EBE9ED;
 }

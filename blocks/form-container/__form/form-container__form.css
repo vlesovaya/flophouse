@@ -1,4 +1,6 @@
 .form-container__form {
     grid-area: grid-form;
     text-align: end;
+    margin-top: 12px;
 }
+
