@@ -15,12 +15,22 @@ function getWelcomeScreenElement() {
 }
 
 function getChooseCategoryElement() {
-    return getFormById('#choose-category', navigateFromChooseCategory, getWelcomeScreenElement);
+    const form = getFormById('#choose-category', navigateFromChooseCategory, getWelcomeScreenElement);
+    const formRadioButtons = form.querySelectorAll('.form-container__radio');
+    const nextButton = form.querySelector('.form-container_color_purple');
+
+    for (let formRadioButton of formRadioButtons) {
+        formRadioButton.addEventListener('click', function (evt) {
+            nextButton.removeAttribute('disabled');
+        });
+    }
+    return form;
 }
 
 function navigateFromChooseCategory() {
     const formElement = document.querySelector('.form-container__form');
     const checkedValue = getCheckedRadioButtonId(formElement, '.form-container__radio');
+
     switch (checkedValue) {
         case ('food'):
             return getCafeFormStep2();
