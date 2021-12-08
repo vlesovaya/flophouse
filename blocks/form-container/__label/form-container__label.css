@@ -3,4 +3,13 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 450px) {
+    .form-container__label {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
