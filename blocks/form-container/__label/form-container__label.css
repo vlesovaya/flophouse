@@ -4,3 +4,10 @@
     font-size: 18px;
     line-height: 1.33;
 }
+
+@media screen and (max-width: 450px) {
+    .form-container__label {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
