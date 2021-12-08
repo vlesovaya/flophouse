@@ -3,8 +3,9 @@
     max-width: 100%;
     box-sizing: border-box;
     margin: 0;
-    padding: 12px 24px;
-    border: none;
+    padding: 10px 24px;
+    border: 2px solid #96949E;
+    border-radius: 26px;
     outline: none;
     appearance: none;
     background-image: url(../../../images/select-icon.svg);
@@ -15,4 +16,15 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 1.33;
+}
+
+.form-container__select:focus {
+    border: 2px solid #7100FF;
+}
+
+@media screen and (max-width: 450px) {
+    .form-container__select {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }

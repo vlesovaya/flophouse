@@ -48,7 +48,6 @@
 @import url(../blocks/form-container/__chosen/form-container__chosen.css);
 @import url(../blocks/form-container/__label/_type/form-container__label_type_text.css);
 @import url(../blocks/form-container/__select/form-container__select.css);
-@import url(../blocks/form-container/__item/_theme/form-container__item_theme_gray.css);
 @import url(../blocks/form-container/__text-input/form-container__text-input.css);
 @import url(../blocks/form-container/__textarea/form-container__textarea.css);
 @import url(../blocks/form-container/__textarea-obshepit/form-container__textarea-obshepit.css);
@@ -61,7 +60,6 @@
 @import url(../blocks/form-container/__radio/_type/form-container__radio_type_round.css);
 @import url(../blocks/form-container/__label/_type/form-container__label_type_round.css);
 @import url(../blocks/form-container/__capture/form-container__capture.css);
-@import url(../blocks/form-container/__textarea/_size/form-container__textarea_size_s.css);
 @import url(../blocks/form-container/__radio-field/_type_event/form-container__radio-field_type_input-padding.css);
 @import url(../blocks/form-container/__label/_type/form-container__label_type_event.css);
 

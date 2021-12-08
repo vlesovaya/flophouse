@@ -1,6 +1,12 @@
 .header__button {
     width: 153px;
+<<<<<<< HEAD
     height: 48px;
+=======
+    padding: 12px 24px;
+    opacity: 1;
+    transition: 0.4s linear;
+>>>>>>> 96e9845305ab32e1edadcc671f00e3ba66a7735b
 }
 
 

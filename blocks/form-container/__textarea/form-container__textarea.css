@@ -1,4 +1,5 @@
 .form-container__textarea {
     box-sizing: border-box;
     min-height: 132px;
+    resize: none
 }

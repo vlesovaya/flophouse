@@ -1,7 +1,11 @@
 .form-container__label_type_radio {
-    padding: 12px 24px;
+    padding: 10px 24px;
     width: 100%;
     cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid #3B3748;
+    border-radius: 26px;
+    text-align: left;
 }
 
 .form-container__label_type_radio::after {
