@@ -1,10 +1,19 @@
 .form-container__radio {
-    display: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width: 24px;
     height: 24px;
     margin: 12px 24px 0 0;
     position: absolute;
     right: 0;
+    outline: none;
+}
+
+.form-container__radio:focus + .form-container__label_type_radio {
+    background-color: #ffffff;
+    color: #3B3748;
+    border: 2px solid #7100FF;
 }
 
 .form-container__radio:checked + .form-container__label_type_radio {
