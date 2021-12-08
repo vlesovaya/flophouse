@@ -1,0 +1,20 @@
+.form-container__select-item {
+  box-sizing: border-box;
+  padding: 12px 24px;
+  color: #3B3748;
+  cursor: pointer;
+  width: 100%;
+  text-align: start;
+}
+
+.form-container__select-item:hover{
+  background-color: #EBE9ED;
+}
+
+.form-container__select-item:active {
+  background-color: #7100FF;
+  color: #fff;
+  background-image: url(../../../images/check_icon.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 50% right 24px;
+}

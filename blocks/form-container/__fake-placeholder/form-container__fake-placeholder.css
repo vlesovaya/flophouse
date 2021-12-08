@@ -1,0 +1,31 @@
+.form-container__fake-placeholder {
+  margin: 0;
+  text-align: start;
+  color: #96949E;
+  padding: 0;
+  width: 100%;
+  cursor: pointer;
+  background-image: url(../../../images/select-icon.svg);
+  background-repeat: no-repeat;
+  background-position: right 30px bottom 50%;
+  background-color: #fff;
+  border: 2px solid #96949E;
+  border-radius: 26px;
+  padding: 12px 24px;
+  width: 100%;
+}
+
+.form-container__fake-placeholder::after {
+  content: '';
+  margin: 0;
+  position: absolute;
+  right:0;
+  bottom: 50%;
+  background-image: url(../../../images/select-icon.svg);
+  background-repeat: no-repeat;
+  background-position: right 19.41px top 50%;
+  background-size: 13.17px 7.59px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.33;
+}
