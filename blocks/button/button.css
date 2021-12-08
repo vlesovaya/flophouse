@@ -2,9 +2,11 @@
     border: none;
     border-radius: 26px;
     background: #7100FF;
-    font-family: "TT Firs Neue";
+    font-family: "TT Firs Neue", "Arial", sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
     color: #FCFAF7;
+    text-align: center;
+    font-style: normal;
 }
