@@ -153,7 +153,8 @@
                 <li class="form-container__item">
                     <input checked class="form-container__radio" id="food" name="choose-category" type="radio">
                     <label class="form-container__label form-container__label_type_radio" for="food">
-                        кафе/бар/ресторан</label>
+                        кафе/бар/ресторан
+                    </label>
                 </li>
                 <li class="form-container__item">
                     <input class="form-container__radio" id="education" name="choose-category" type="radio">
@@ -171,7 +172,8 @@
                 </li>
             </ul>
             <div class="main__button-bar">
-                <button class="button form-container__btn form-container_color_white" id="choose-category-reset"
+                <button class="button form-container__btn form-container__btn_type_cancel form-container_color_white"
+                        id="choose-category-reset"
                         type="reset">отмена
                 </button>
                 <button class="button form-container__btn form-container_color_purple" id="choose-category-submit"
@@ -193,58 +195,50 @@
                 <li class="form-container__option">процент от&nbsp;продаж определенных позиций или всего меню</li>
             </ul>
         </div>
-        <form action="#" class="form-container__form">
-            <ul class="form-container__list ">
+        <form action="#" class="form-container__form" autocomplete="off">
+            <ul class="form-container__list">
                 <li class="form-container__chosen">
                     <div class="form-container__item form-container_checked">
-                        <label class="form-container__label form-container__label_type_radio form-container_color_purple"
+                        <input checked class="form-container__radio" id="food_chosen"
+                           name="choose-category"
+                           type="radio">
+                        <label class="form-container__label form-container__label_type_radio"
                                for="food">кафе/бар/ресторан</label>
-                        <input checked class="form-container__radio" id="food_chosen" name="choose-category"
-                               type="radio">
                     </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="city">город</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <select class="form-container__select form-container__disabled" id="city" name="city" required>
+                        <select class="form-container__select form-container__disabled"
+                                id="city" name="city" required>
                             <option disabled selected value="">выберите из списка</option>
                             <option value="Москва">Москва</option>
                             <option value="Санкт-Петербург">Санкт-Петербург</option>
                         </select>
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="place-name">название
                         заведения</label>
-                    <div class="form-container__item form-container__item_theme_gray">
                         <input class="form-container__text-input" id="place-name" name="place-name"
-                               placeholder="введите название заведения" required type="text">
-                    </div>
+                               placeholder="введите название заведения" required type="text" autocomplete="off">
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="contact-name">контактное
                         лицо</label>
-                    <div class="form-container__item form-container__item_theme_gray">
                         <input class="form-container__text-input" id="contact-name" minlength="5"
                                name="contact-name" placeholder="введите ФИО" required type="text">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="contact-phone">телефон для
                         связи с&nbsp;организатором</label>
-                    <div class="form-container__item form-container__item_theme_gray">
                         <input class="form-container__text-input" id="contact-phone" name="contact-phone" required
-                               type="tel" value="+7(">
-                    </div>
+                               type="tel" value="+7(" placeholder="+7(">
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="desc">описание</label>
-                    <div class="form-container__item form-container__item_theme_gray">
                         <textarea class="form-container__text-input form-container__textarea"
                                   id="desc" name="desc"
                                   placeholder="Укажите, что из&nbsp;меню будет принимать участие в&nbsp;акции"
                                   required></textarea>
-                    </div>
                 </li>
             </ul>
             <div class="main__button-bar">
@@ -266,60 +260,48 @@
             <p class="form-container__text">Эти данные появятся в&nbsp;описании карточки вашего мероприятия в&nbsp;нашем
                 каталоге событий</p>
         </div>
-        <form action="#" class="form-container__form" id="form-bar">
+        <form action="#" class="form-container__form" id="form-bar" autocomplete="off">
             <ul class="form-container__list ">
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="working-hours">часы работы
                         заведения</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="working-hours"
+                    <input class="form-container__text-input" id="working-hours"
                                name="working-hours" placeholder="например: 10:00-13:00, 13:00-19:00" required
                                type="text">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="institution-address">адрес
                         заведения</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="institution-address" name="institution-address"
+                    <input class="form-container__text-input" id="institution-address" name="institution-address"
                                placeholder="каждый адрес с новой строки" required type="text">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="institution-phone-number">номер
                         телефона заведения</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="institution-phone-number"
+                    <input class="form-container__text-input" id="institution-phone-number"
                                name="institution-phone-number" required
                                type="tel" value="+7(">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="link-site">ссылка на
                         сайт</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="link-site" name="link-site" required
+                    <input class="form-container__text-input" id="link-site" name="link-site" required
                                type="url" value="https://">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="link-socNetwork">ссылки на
                         соцсети</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <textarea class="form-container__text-input" id="link-socNetwork"
+                    <textarea class="form-container__text-input" id="link-socNetwork"
                                   name="link-socNetwork" placeholder="каждую ссылку с новой строки" required
                                   rows="1"></textarea>
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="invitation-description">
                         описание</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                    <textarea class="form-container__text-input form-container__textarea_size_s"
+                    <textarea class="form-container__text-input form-container__textarea"
                               id="invitation-description"
                               name="invitation-description"
                               placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон"></textarea>
-                    </div>
                 </li>
             </ul>
             <div class="main__button-bar">
@@ -343,7 +325,7 @@
             <p class="form-container__text">Когда люди будут покупать билеты, вам будут приходить уведомления на
                 электронную почту</p>
         </div>
-        <form action="#" class="form-container__form">
+        <form action="#" class="form-container__form" autocomplete="off">
             <ul class="form-container__list ">
                 <li class="form-container__chosen">
                     <div class="form-container__item form-container_checked">
@@ -368,47 +350,37 @@
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="event-city">город</label>
-                    <div class="form-container__item form-container__item_theme_gray">
                         <select class="form-container__select form-container__disabled" id="event-city" name="city">
                             <option disabled selected value="">выберите из списка</option>
                             <option value="Москва">Москва</option>
                             <option value="Санкт-Петербург">Санкт-Петербург</option>
                         </select>
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="event-name">название
                         мероприятия</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="event-name" name="event-name"
+                    <input class="form-container__text-input" id="event-name" name="event-name"
                                placeholder="введите название" required type="text">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="event-date">дата
                         проведения</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input form-container__disabled" id="event-date"
+                    <input class="form-container__text-input form-container__disabled" id="event-date"
                                name="event-date" onfocus="(this.type='date')"
                                placeholder="укажите дату в формате дд.мм.гггг" required type="text">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text"
                            for="event-contact-name">контактное лицо</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="event-contact-name" minlength="5"
+                    <input class="form-container__text-input" id="event-contact-name" minlength="5"
                                name="contact-name" placeholder="введите ФИО" required type="text">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="event-contact-phone">номер
                         телефона для связи с
                         организатором</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="event-contact-phone" name="contact-phone" required
+                    <input class="form-container__text-input" id="event-contact-phone" name="contact-phone" required
                                type="tel" value="+7(">
-                    </div>
                 </li>
             </ul>
             <div class="main__button-bar">
@@ -430,50 +402,40 @@
             <p class="form-container__text">Эти данные появятся в&nbsp;описании карточки вашего мероприятия в&nbsp;нашем
                 каталоге событий</p>
         </div>
-        <form action="#" class="form-container__form">
+        <form action="#" class="form-container__form" autocomplete="off">
             <ul class="form-container__list ">
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="event-working-hours">время
                         проведения</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="event-working-hours" name="event-working-hours"
+                    <input class="form-container__text-input" id="event-working-hours" name="event-working-hours"
                                onfocus="(this.type='time')" placeholder="например: 18:00-22:00" required type="text">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text"
                            for="event-address">адрес заведения</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="event-address"
+                    <input class="form-container__text-input" id="event-address"
                                name="event-address" placeholder="каждый адрес с новой строки"
                                required type="text">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text"
                            for="event-phone-number">номер телефона заведения</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="event-phone-number" name="event-phone-number"
+                    <input class="form-container__text-input" id="event-phone-number" name="event-phone-number"
                                required type="tel" value="+7(">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text"
                            for="event-price">стоимость участия</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="event-price" name="event-price"
+                    <input class="form-container__text-input" id="event-price" name="event-price"
                                placeholder="укажите стоимость в рублях" required type="number">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text"
                            for="event-description">описание</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                    <textarea class="form-container__text-input form-container__textarea_size_s"
+                    <textarea class="form-container__text-input form-container__textarea"
                               id="event-description"
                               name="event-description"
                               placeholder="Напишите небольшой анонс вашего местер-класса или лекции. Чем мероприятие будет полезно, чему посвящено"></textarea>
-                    </div>
                 </li>
             </ul>
             <div class="main__button-bar">
@@ -497,7 +459,7 @@
             <p class="form-container__text">Установите пожертвование, например кусочек пирога за&nbsp;любую комфортную
                 сумму</p>
         </div>
-        <form action="#" class="form-container__form">
+        <form action="#" class="form-container__form" autocomplete="off">
             <ul class="form-container__list ">
                 <li class="form-container__chosen">
                     <div class="form-container__item form-container_checked">
@@ -509,21 +471,17 @@
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="city">город</label>
-                    <div class="form-container__item form-container__item_theme_gray">
                         <select class="form-container__select form-container__disabled" id="party-city" name="city">
                             <option disabled selected value="">выберите из списка</option>
                             <option value="Москва">Москва</option>
                             <option value="Санкт-Петербург">Санкт-Петербург</option>
                         </select>
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="place-name">название
                         мероприятия</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="party-name" name="party-name"
+                    <input class="form-container__text-input" id="party-name" name="party-name"
                                placeholder="введите название" required type="text">
-                    </div>
                 </li>
                 <li>
                     <fieldset class="form-container__radio-field">
@@ -544,27 +502,21 @@
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="party-date">дата
                         проведения</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input form-container__disabled" id="party-date"
+                    <input class="form-container__text-input form-container__disabled" id="party-date"
                                name="party-date" onfocus="(this.type='date')"
                                placeholder="укажите дату в формате дд.мм.гггг" required type="text">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="contact-name">контактное
                         лицо</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="party-contact-name" minlength="5"
+                    <input class="form-container__text-input" id="party-contact-name" minlength="5"
                                name="contact-name" placeholder="введите ФИО" required type="text">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="contact-phone">телефон для
                         связи с&nbsp;организатором</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="party-contact-phone" name="contact-phone" required
+                    <input class="form-container__text-input" id="party-contact-phone" name="contact-phone" required
                                type="tel" value="+7(">
-                    </div>
                 </li>
             </ul>
             <div class="main__button-bar">
@@ -586,68 +538,54 @@
             <p class="form-container__text">Эти данные появятся в&nbsp;описании карточки вашего мероприятия в&nbsp;нашем
                 каталоге событий</p>
         </div>
-        <form action="#" class="form-container__form">
+        <form action="#" class="form-container__form" autocomplete="off">
             <ul class="form-container__list ">
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="party-time">время
                         проведения</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input form-container__disabled" id="party-time"
+                    <input class="form-container__text-input form-container__disabled" id="party-time"
                                name="party-time" onfocus="(this.type='time')" placeholder="например: 18:00-22:00"
                                required type="text">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="party-adress">адрес
                         проведения</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="party-adress" name="party-adress"
+                    <input class="form-container__text-input" id="party-adress" name="party-adress"
                                placeholder="каждый адрес с новой строки" required type="text">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="party-booking-phone">номер
                         телефона для бронирования</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="party-booking-phone" name="party-booking-phone"
+                    <input class="form-container__text-input" id="party-booking-phone" name="party-booking-phone"
                                required
                                type="tel" value="+7(">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="party-price">стоимость
                         участия</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="party-price" min="1"
+                    <input class="form-container__text-input" id="party-price" min="1"
                                name="party-price" placeholder="укажите стоимость в рублях" required type="number">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="party-link">ссылка на
                         сайт</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="party-link" name="party-link" required
+                    <input class="form-container__text-input" id="party-link" name="party-link" required
                                type="url" value="https://">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="party-social">ссылки на
                         соцсети</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="party-social" name="party-social"
+                    <input class="form-container__text-input" id="party-social" name="party-social"
                                placeholder="каждую ссылку с новой строки" required type="url">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text"
                            for="party-desc">описание</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <textarea
-                                class="form-container__text-input form-container__textarea form-container__textarea_size_s"
+                       <textarea
+                                class="form-container__text-input form-container__textarea"
                                 id="party-desc"
                                 name="party-desc"
                                 placeholder="Напишите небольшой анонс вашего мероприятия. Чем оно будет полезно/чему посвящено"></textarea>
-                    </div>
                 </li>
             </ul>
             <div class="main__button-bar">
@@ -671,10 +609,10 @@
             <p class="form-container__text">Установите пожертвование, например кусочек пирога за&nbsp;любую комфортную
                 сумму</p>
         </div>
-        <form action="#" class="form-container__form">
+        <form action="#" class="form-container__form" autocomplete="off">
             <ul class="form-container__list ">
                 <li class="form-container__chosen">
-                    <div class="form-container__item form-container_checked">
+                    <div class="form-container__item .form-container_checked">
                         <label class="form-container__label form-container__label_type_radio form-container_color_purple"
                                for="other-2">другое</label>
                         <input checked class="form-container__radio" id="other-2" name="other" type="radio">
@@ -682,46 +620,36 @@
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="city">город</label>
-                    <div class="form-container__item form-container__item_theme_gray">
                         <select class="form-container__select form-container__disabled" id="other-city" name="city">
                             <option disabled selected value="">выберите из списка</option>
                             <option value="Москва">Москва</option>
                             <option value="Санкт-Петербург">Санкт-Петербург</option>
                         </select>
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="place-name">название
                         мероприятия</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="other-party-name" name="party-name"
+                    <input class="form-container__text-input" id="other-party-name" name="party-name"
                                placeholder="введите название" required type="text">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="party-date">дата
                         проведения</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input form-container__disabled" id="other-party-date"
+                    <input class="form-container__text-input form-container__disabled" id="other-party-date"
                                name="party-date" onfocus="(this.type='date')"
                                placeholder="укажите дату в формате дд.мм.гггг" required type="text">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="contact-name">контактное
                         лицо</label>
-                    <div class="form-container__item form-container__item_theme_gray">
                         <input class="form-container__text-input" id="other-contact-name" minlength="5"
                                name="contact-name" placeholder="введите ФИО" required type="text">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="contact-phone">телефон для
                         связи с&nbsp;организатором</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="other-contact-phone" name="contact-phone" required
+                    <input class="form-container__text-input" id="other-contact-phone" name="contact-phone" required
                                type="tel" value="+7(">
-                    </div>
                 </li>
             </ul>
             <div class="main__button-bar">
@@ -743,52 +671,42 @@
             <p class="form-container__text">Эти данные появятся в&nbsp;описании карточки вашего мероприятия в&nbsp;нашем
                 каталоге событий</p>
         </div>
-        <form action="#" class="form-container__form">
+        <form action="#" class="form-container__form" autocomplete="off">
             <ul class="form-container__list">
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="other-time">время
                         проведения</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input form-container__disabled" id="other-time"
+                    <input class="form-container__text-input form-container__disabled" id="other-time"
                                name="other-time" onfocus="(this.type='time')" placeholder="например: 18:00-22:00"
                                required type="text">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="other-adress">адрес
                         проведения</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="other-adress" name="other-adress"
+                    <input class="form-container__text-input" id="other-adress" name="other-adress"
                                placeholder="каждый адрес с новой строки" required type="text">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="other-booking-phone">номер
                         телефона для бронирования</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="other-booking-phone" name="other-booking-phone"
+                    <input class="form-container__text-input" id="other-booking-phone" name="other-booking-phone"
                                required
                                type="tel" value="+7(">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="other-price">стоимость
                         участия</label>
-                    <div class="form-container__item form-container__item_theme_gray">
-                        <input class="form-container__text-input" id="other-price" min="1"
+                    <input class="form-container__text-input" id="other-price" min="1"
                                name="other-price" placeholder="укажите стоимость в рублях" required type="number">
-                    </div>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text"
                            for="other-desc">описание</label>
-                    <div class="form-container__item form-container__item_theme_gray">
                         <textarea
-                                class="form-container__text-input form-container__textarea form-container__textarea_size_s"
+                                class="form-container__text-input form-container__textarea"
                                 id="other-desc"
                                 name="other-desc"
                                 placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон "></textarea>
-                    </div>
                 </li>
             </ul>
             <div class="main__button-bar">
