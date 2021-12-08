@@ -13,6 +13,7 @@
 
 .form-container__select-item:active {
   background-color: #7100FF;
+  color: #fff;
   background-image: url(../../../images/check_icon.svg);
   background-repeat: no-repeat;
   background-position: bottom 50% right 24px;
