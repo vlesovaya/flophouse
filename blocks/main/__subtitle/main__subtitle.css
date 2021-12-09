@@ -3,7 +3,7 @@
     line-height: 52px;
     font-weight: 500;
     margin-bottom: 24px;
-    letter-spacing: normal;
+    letter-spacing: -0.01em;
 }
 
 @media screen and (max-width: 740px) {
@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 450px) {
     .main__subtitle {
-        margin: 0 auto 20px;
+        margin: 40px auto 20px;
         font-size: 32px;
         line-height: 36px;
     }

@@ -17,7 +17,7 @@ function getWelcomeScreenElement() {
 function getChooseCategoryElement() {
     const form = getFormById('#choose-category', navigateFromChooseCategory, getWelcomeScreenElement);
     const formRadioButtons = form.querySelectorAll('.form-container__radio');
-    const nextButton = form.querySelector('.form-container_color_purple');
+    const nextButton = form.querySelector('.form-container__btn_type_next');
 
     for (let formRadioButton of formRadioButtons) {
         formRadioButton.addEventListener('click', function (evt) {

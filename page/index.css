@@ -78,12 +78,12 @@
 @import url(../blocks/footer/__content-container/footer__content-container.css);
 @import url(../blocks/footer/__block-info/footer__block-info.css);
 @import url(../blocks/footer/__heading/footer__heading.css);
-@import url(../blocks/footer/__heading/_indent/footer_heading_indent_m.css);
+@import url(../blocks/footer/__heading/_type/footer__heading_type_social-margin.css);
 @import url(../blocks/footer/__email/footer__email.css);
 @import url(../blocks/footer/__list/footer__list.css);
 @import url(../blocks/footer/__links/footer__links.css);
 @import url(../blocks/footer/__link/footer__link.css);
 
 @import url(../blocks/footer/__list-social/footer__list-social.css);
-@import url(../blocks/footer/__social-links/footer__social-links.css);
+@import url(../blocks/footer/__social-link/footer__social-link.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);

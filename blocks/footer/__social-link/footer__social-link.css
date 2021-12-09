@@ -6,3 +6,7 @@
 .footer__social-link:nth-child(1) {
     margin: 0;
 }
+
+.footer__social-link:hover {
+    opacity: 0.7;
+}

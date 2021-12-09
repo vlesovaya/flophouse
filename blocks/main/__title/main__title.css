@@ -1,17 +1,21 @@
 .main__title {
-    margin: 0 0 40px;
+    margin: 0 0 40px 40px;
     font-size: 96px;
     line-height: 96px;
     font-weight: 500;
-    letter-spacing: normal;
+    letter-spacing: -0.02em;
+}
+
+@media screen and (max-width: 1050px) {
+    .main__title {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 740px) {
     .main__title {
         max-width: calc(100% - 40px);
-        margin-top: 20px;
-        margin-right: auto;
-        margin-left: auto;
+        margin: 20px auto 0;
         font-size: 64px;
     }
 }

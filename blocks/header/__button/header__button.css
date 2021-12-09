@@ -7,11 +7,32 @@
 
 @media screen and (max-width: 1024px) {
     .header__button {
-        border-radius: 0;
+        display: none;
+    }
+}
+
+.header__burger-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__burger-menu {
+        display: block;
+        position: absolute;
+        content: '';
+        background-image: url(../../../images/burger-menu.svg);
+        background-repeat: no-repeat;
         width: 20px;
         height: 20px;
-        background-image: url(../../../images/burger-menu.svg);
-        background-color: rgba(0, 0, 0, 0);
-        font-size: 0;
+        background-color: transparent;
+        border: none;
+        right: 4px;
+        opacity: 1;
+        transition: 0.4s linear;
+        cursor: pointer;
+    }
+
+    .header__burger-menu:hover {
+        opacity: 0.7;
     }
 }
