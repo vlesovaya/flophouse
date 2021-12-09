@@ -7,7 +7,6 @@
     font-size: 18px;
     line-height: 24px;
     color: #FCFAF7;
-<<<<<<< HEAD
     opacity: 1;
     transition: 0.4s linear;
 }
@@ -15,8 +14,6 @@
 .button:hover {
     cursor: pointer;
     opacity: .7;
-=======
     text-align: center;
     font-style: normal;
->>>>>>> 96e9845305ab32e1edadcc671f00e3ba66a7735b
 }
