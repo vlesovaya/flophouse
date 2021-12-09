@@ -1,5 +1,5 @@
 .header__want-to-go {
-    margin: 0;
+    margin: 0 32px 0 0;
     padding: 0;
     text-decoration: none;
     font-family: "TT Firs Neue", "Arial", sans-serif;
@@ -7,7 +7,6 @@
     font-size: 18px;
     line-height: 24px;
     color: #3B3748;
-    margin-right: 32px;
     opacity: 1;
     transition: 0.4s linear;
 }

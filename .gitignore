@@ -105,3 +105,6 @@ dist
 
 # WebShtorm files
 .idea/
+
+# VS code files
+.vscode/

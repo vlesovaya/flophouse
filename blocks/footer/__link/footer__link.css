@@ -6,6 +6,7 @@
     line-height: 24px;
     color: #3b3748;
     text-decoration: none;
+    padding-right: 31px;
 }
 
 .footer__link:hover {
@@ -13,6 +14,8 @@
 }
 
 .footer__link::after {
+    position: absolute;
     content: url(../../../images/footer_exit.svg);
+    right: 0;
 }
 

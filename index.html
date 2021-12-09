@@ -25,6 +25,7 @@
             <button class="header__like"></button>
             <a class="header__want-to-go" href="#">хочу пойти</a>
             <button class="button header__button">поддержать</button>
+            <button class="header__burger-menu"></button>
         </div>
     </div>
 </header>
@@ -74,19 +75,19 @@
                 </ul>
             </div>
             <div class="footer__block-info">
-                <h2 class="footer__heading footer__heading_indent_m">мы&nbsp;в&nbsp;соцсетях:</h2>
+                <h2 class="footer__heading footer__heading_type_social-margin">мы&nbsp;в&nbsp;соцсетях:</h2>
                 <ul class="footer__list-social">
-                    <li class="footer__social-links">
+                    <li class="footer__social-link">
                         <a href="https://www.facebook.com/Homeless.ru" target="_blank">
                             <img alt="Facebook" class="footer__social-icon" src="./images/facebook.svg"/>
                         </a>
                     </li>
-                    <li class="footer__social-links">
+                    <li class="footer__social-link">
                         <a href="https://www.instagram.com/nochlezhka/" target="_blank">
                             <img alt="Instagram" class="footer__social-icon" src="./images/instagram.svg"/>
                         </a>
                     </li>
-                    <li class="footer__social-links">
+                    <li class="footer__social-link">
                         <a href="https://vk.com/club239781" target="_blank">
                             <img alt="vkontakte" class="footer__social-icon" src="./images/vk.svg"/>
                         </a>
@@ -173,7 +174,7 @@
                 <button class="button form-container__btn form-container__btn_type_back" id="choose-category-reset"
                         type="reset">отмена</button>
                 <button class="button form-container__btn form-container__btn_type_next" id="choose-category-submit"
-                        type="submit">далее</button>
+                        type="submit" disabled>далее</button>
             </div>
         </form>
     </div>
@@ -364,7 +365,7 @@
                         <select class="form-container__select" id="event-city" name="event-city" required>
                             <option class="form-container__select-option" value="" selected>выберите из списка</option>
                             <option class="form-container__select-option" value="Москва">Москва</option>
-                            <option class="form-container__select-option" value="Санкт-Петербург">Санкт-Петербург</option> -->
+                            <option class="form-container__select-option" value="Санкт-Петербург">Санкт-Петербург</option>
                         </select>
                     </div>
                     <ul class="form-container__select-list">
@@ -502,7 +503,7 @@
                         <select class="form-container__select" id="party-city" name="city" required>
                             <option class="form-container__select-option" value="" selected>выберите из списка</option>
                             <option class="form-container__select-option" value="Москва">Москва</option>
-                            <option class="form-container__select-option" value="Санкт-Петербург">Санкт-Петербург</option> -->
+                            <option class="form-container__select-option" value="Санкт-Петербург">Санкт-Петербург</option>
                         </select>
                     </div>
                     <ul class="form-container__select-list">
@@ -670,7 +671,7 @@
                         <select class="form-container__select" id="other-city" name="city" required>
                             <option class="form-container__select-option" value="" selected>выберите из списка</option>
                             <option class="form-container__select-option" value="Москва">Москва</option>
-                            <option class="form-container__select-option" value="Санкт-Петербург">Санкт-Петербург</option> -->
+                            <option class="form-container__select-option" value="Санкт-Петербург">Санкт-Петербург</option>
                         </select>
                     </div>
                     <ul class="form-container__select-list">
