@@ -222,18 +222,21 @@
                         заведения</label>
                         <input class="form-container__text-input" id="place-name" name="place-name"
                                placeholder="введите название заведения" required type="text" autocomplete="off">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="contact-name">контактное
                         лицо</label>
                         <input class="form-container__text-input" id="contact-name" minlength="5"
                                name="contact-name" placeholder="введите ФИО" required type="text">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="contact-phone">телефон для
                         связи с&nbsp;организатором</label>
                         <input class="form-container__text-input" id="contact-phone" name="contact-phone" required
                                type="tel" value="+7(" placeholder="+7(">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="desc">описание</label>
@@ -241,6 +244,7 @@
                                   id="desc" name="desc"
                                   placeholder="Укажите, что из&nbsp;меню будет принимать участие в&nbsp;акции"
                                   required></textarea>
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
             </ul>
             <div class="main__button-bar">
@@ -266,12 +270,14 @@
                     <input class="form-container__text-input" id="working-hours"
                                name="working-hours" placeholder="например: 10:00-13:00, 13:00-19:00" required
                                type="text">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="institution-address">адрес
                         заведения</label>
                     <input class="form-container__text-input" id="institution-address" name="institution-address"
                                placeholder="каждый адрес с новой строки" required type="text">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="institution-phone-number">номер
@@ -279,12 +285,14 @@
                     <input class="form-container__text-input" id="institution-phone-number"
                                name="institution-phone-number" required
                                type="tel" value="+7(">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="link-site">ссылка на
                         сайт</label>
                     <input class="form-container__text-input" id="link-site" name="link-site" required
                                type="url" placeholder="https://">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="link-socNetwork">ссылки на
@@ -292,6 +300,7 @@
                     <textarea class="form-container__text-input" id="link-socNetwork"
                                   name="link-socNetwork" placeholder="каждую ссылку с новой строки" required
                                   rows="1"></textarea>
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="invitation-description">
@@ -300,6 +309,7 @@
                               id="invitation-description"
                               name="invitation-description"
                               placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон"></textarea>
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
             </ul>
             <div class="main__button-bar">
@@ -345,6 +355,7 @@
                         <label class="form-container__label form-container__label_type_round form-container__label_type_event"
                                for="offline-event">офлайн</label>
                     </fieldset>
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="event-city">город</label>
@@ -367,6 +378,7 @@
                         мероприятия</label>
                     <input class="form-container__text-input" id="event-name" name="event-name"
                                placeholder="введите название" required type="text">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="event-date">дата
@@ -374,12 +386,14 @@
                     <input class="form-container__text-input form-container__disabled" id="event-date"
                                name="event-date" onfocus="(this.type='date')"
                                placeholder="укажите дату в формате дд.мм.гггг" required type="text">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text"
                            for="event-contact-name">контактное лицо</label>
                     <input class="form-container__text-input" id="event-contact-name" minlength="5"
                                name="contact-name" placeholder="введите ФИО" required type="text">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="event-contact-phone">номер
@@ -387,6 +401,7 @@
                         организатором</label>
                     <input class="form-container__text-input" id="event-contact-phone" name="contact-phone" required
                                type="tel" value="+7(">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
             </ul>
             <div class="main__button-bar">
@@ -415,6 +430,7 @@
                         проведения</label>
                     <input class="form-container__text-input" id="event-working-hours" name="event-working-hours"
                                onfocus="(this.type='time')" placeholder="например: 18:00-22:00" required type="text">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text"
@@ -422,18 +438,21 @@
                     <input class="form-container__text-input" id="event-address"
                                name="event-address" placeholder="каждый адрес с новой строки"
                                required type="text">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text"
                            for="event-phone-number">номер телефона заведения</label>
                     <input class="form-container__text-input" id="event-phone-number" name="event-phone-number"
                                required type="tel" value="+7(">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text"
                            for="event-price">стоимость участия</label>
                     <input class="form-container__text-input" id="event-price" name="event-price"
                                placeholder="укажите стоимость в рублях" required type="number">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text"
@@ -442,6 +461,7 @@
                               id="event-description"
                               name="event-description"
                               placeholder="Напишите небольшой анонс вашего местер-класса или лекции. Чем мероприятие будет полезно, чему посвящено"></textarea>
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
             </ul>
             <div class="main__button-bar">
@@ -496,6 +516,7 @@
                         мероприятия</label>
                     <input class="form-container__text-input" id="party-name" name="party-name"
                                placeholder="введите название" required type="text">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <fieldset class="form-container__radio-field">
@@ -512,6 +533,7 @@
                         <p class="form-container__capture">адрес увидят только, те&nbsp;кому вы&nbsp;оправите ссылку на&nbsp;событие</p>
 
                     </fieldset>
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="party-date">дата
@@ -519,18 +541,21 @@
                     <input class="form-container__text-input form-container__disabled" id="party-date"
                                name="party-date" onfocus="(this.type='date')"
                                placeholder="укажите дату в формате дд.мм.гггг" required type="text">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="contact-name">контактное
                         лицо</label>
                     <input class="form-container__text-input" id="party-contact-name" minlength="5"
                                name="contact-name" placeholder="введите ФИО" required type="text">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="contact-phone">телефон для
                         связи с&nbsp;организатором</label>
                     <input class="form-container__text-input" id="party-contact-phone" name="contact-phone" required
                                type="tel" value="+7(">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
             </ul>
             <div class="main__button-bar">
@@ -560,12 +585,14 @@
                     <input class="form-container__text-input form-container__disabled" id="party-time"
                                name="party-time" onfocus="(this.type='time')" placeholder="например: 18:00-22:00"
                                required type="text">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="party-adress">адрес
                         проведения</label>
                     <input class="form-container__text-input" id="party-adress" name="party-adress"
                                placeholder="каждый адрес с новой строки" required type="text">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="party-booking-phone">номер
@@ -573,24 +600,28 @@
                     <input class="form-container__text-input" id="party-booking-phone" name="party-booking-phone"
                                required
                                type="tel" value="+7(">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="party-price">стоимость
                         участия</label>
                     <input class="form-container__text-input" id="party-price" min="1"
                                name="party-price" placeholder="укажите стоимость в рублях" required type="number">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="party-link">ссылка на
                         сайт</label>
                     <input class="form-container__text-input" id="party-link" name="party-link" required
                                type="url" placeholder="https://">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="party-social">ссылки на
                         соцсети</label>
                     <input class="form-container__text-input" id="party-social" name="party-social"
                                placeholder="каждую ссылку с новой строки" required type="url">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text"
@@ -600,6 +631,7 @@
                                 id="party-desc"
                                 name="party-desc"
                                 placeholder="Напишите небольшой анонс вашего мероприятия. Чем оно будет полезно/чему посвящено"></textarea>
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
             </ul>
             <div class="main__button-bar">
@@ -652,6 +684,7 @@
                         мероприятия</label>
                     <input class="form-container__text-input" id="other-party-name" name="party-name"
                                placeholder="введите название" required type="text">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="party-date">дата
@@ -659,18 +692,21 @@
                     <input class="form-container__text-input form-container__disabled" id="other-party-date"
                                name="party-date" onfocus="(this.type='date')"
                                placeholder="укажите дату в формате дд.мм.гггг" required type="text">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="contact-name">контактное
                         лицо</label>
                         <input class="form-container__text-input" id="other-contact-name" minlength="5"
                                name="contact-name" placeholder="введите ФИО" required type="text">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="contact-phone">телефон для
                         связи с&nbsp;организатором</label>
                     <input class="form-container__text-input" id="other-contact-phone" name="contact-phone" required
                                type="tel" value="+7(">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
             </ul>
             <div class="main__button-bar">
@@ -700,12 +736,14 @@
                     <input class="form-container__text-input form-container__disabled" id="other-time"
                                name="other-time" onfocus="(this.type='time')" placeholder="например: 18:00-22:00"
                                required type="text">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="other-adress">адрес
                         проведения</label>
                     <input class="form-container__text-input" id="other-adress" name="other-adress"
                                placeholder="каждый адрес с новой строки" required type="text">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="other-booking-phone">номер
@@ -713,12 +751,14 @@
                     <input class="form-container__text-input" id="other-booking-phone" name="other-booking-phone"
                                required
                                type="tel" value="+7(">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="other-price">стоимость
                         участия</label>
                     <input class="form-container__text-input" id="other-price" min="1"
                                name="other-price" placeholder="укажите стоимость в рублях" required type="number">
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text"
@@ -728,6 +768,7 @@
                                 id="other-desc"
                                 name="other-desc"
                                 placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон "></textarea>
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
             </ul>
             <div class="main__button-bar">
