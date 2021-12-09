@@ -9,13 +9,19 @@
 @media screen and (max-width: 740px) {
     .main__title {
         max-width: calc(100% - 40px);
-        margin: 20px auto 40px;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
         font-size: 64px;
     }
 }
 
 @media screen and (max-width: 450px) {
     .main__title {
+<<<<<<< HEAD
         display: none;
+=======
+        font-size: 44px;
+>>>>>>> 7368be1a83f64b985392035f64eff60cbdb6e473
     }
 }

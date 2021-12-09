@@ -5,6 +5,11 @@
     padding: 12px 76px;
 }
 
+.form-container_color_purple:disabled {
+    background-color: #EBE9ED;
+    color: #96949E;
+}
+
 @media screen and (max-width: 960px) {
   .form-container__btn_type_next {
     padding-left: 54px;

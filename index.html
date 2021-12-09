@@ -149,7 +149,7 @@
         <form action="#" class="form-container__form">
             <ul class="form-container__list">
                 <li class="form-container__item">
-                    <input checked class="form-container__radio" id="food" name="choose-category" type="radio">
+                    <input class="form-container__radio" id="food" name="choose-category" type="radio">
                     <label class="form-container__label form-container__label_type_radio" for="food">
                         кафе/бар/ресторан
                     </label>
@@ -193,7 +193,7 @@
         <form action="#" class="form-container__form" autocomplete="off">
             <ul class="form-container__list">
                 <li class="form-container__chosen">
-                    <div class="form-container__item form-container_checked">
+                    <div class="form-container__item">
                         <input checked class="form-container__radio" id="food_chosen"
                            name="choose-category"
                            type="radio">
@@ -202,13 +202,18 @@
                     </div>
                 </li>
                 <li>
-                    <label class="form-container__label form-container__label_type_text" for="city">город</label>
-                        <select class="form-container__select form-container__disabled"
-                                id="city" name="city" required>
-                            <option disabled selected value="">выберите из списка</option>
-                            <option value="Москва">Москва</option>
-                            <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    <label class="form-container__label form-container__label_type_text" for="cafe-city">город</label>
+                    <div class="form-container__item form-container__item_theme_gray">
+                        <p class="form-container__fake-placeholder">выберите из списка</p>
+                        <select class="form-container__select" id="cafe-city" name="city">
+                            <option class="form-container__select-option" value="Москва">Москва</option>
+                            <option class="form-container__select-option" value="Санкт-Петербург">Санкт-Петербург</option>
                         </select>
+                    </div>
+                    <ul class="form-container__select-list">
+                        <li class="form-container__select-item">Москва</li>
+                        <li class="form-container__select-item">Санкт-Петербург</li>
+                    </ul>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="place-name">название
@@ -277,7 +282,7 @@
                     <label class="form-container__label form-container__label_type_text" for="link-site">ссылка на
                         сайт</label>
                     <input class="form-container__text-input" id="link-site" name="link-site" required
-                               type="url" value="https://">
+                               type="url" placeholder="https://">
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="link-socNetwork">ссылки на
@@ -319,7 +324,7 @@
         <form action="#" class="form-container__form" autocomplete="off">
             <ul class="form-container__list ">
                 <li class="form-container__chosen">
-                    <div class="form-container__item form-container_checked">
+                    <div class="form-container__item">
                         <input checked class="form-container__radio" id="event-chosen-step-2"
                                name="event-form-step-2" type="radio">
                         <label class="form-container__label form-container__label_type_radio" for="event-chosen-step-2">
@@ -341,11 +346,17 @@
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="event-city">город</label>
-                        <select class="form-container__select form-container__disabled" id="event-city" name="city">
-                            <option disabled selected value="">выберите из списка</option>
-                            <option value="Москва">Москва</option>
-                            <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    <div class="form-container__item form-container__item_theme_gray">
+                        <p class="form-container__fake-placeholder">выберите из списка</p>
+                        <select class="form-container__select" id="other-city" name="city">
+                            <option class="form-container__select-option" value="Москва">Москва</option>
+                            <option class="form-container__select-option" value="Санкт-Петербург">Санкт-Петербург</option> -->
                         </select>
+                    </div>
+                    <ul class="form-container__select-list">
+                        <li class="form-container__select-item">Москва</li>
+                        <li class="form-container__select-item">Санкт-Петербург</li>
+                    </ul>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="event-name">название
@@ -453,20 +464,26 @@
         <form action="#" class="form-container__form" autocomplete="off">
             <ul class="form-container__list ">
                 <li class="form-container__chosen">
-                    <div class="form-container__item form-container_checked">
-                        <label class="form-container__label form-container__label_type_radio form-container__btn_type_next"
-                               for="party-chosen-step-2">посиделки/вечеринка</label>
+                    <div class="form-container__item">
                         <input checked class="form-container__radio" id="party-chosen-step-2"
                                name="party-chosen-step-2" type="radio">
+                        <label class="form-container__label form-container__label_type_radio"
+                               for="party-chosen-step-2">посиделки/вечеринка</label>
                     </div>
                 </li>
                 <li>
-                    <label class="form-container__label form-container__label_type_text" for="city">город</label>
-                        <select class="form-container__select form-container__disabled" id="party-city" name="city">
-                            <option disabled selected value="">выберите из списка</option>
-                            <option value="Москва">Москва</option>
-                            <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    <label class="form-container__label form-container__label_type_text" for="party-city">город</label>
+                    <div class="form-container__item form-container__item_theme_gray">
+                        <p class="form-container__fake-placeholder">выберите из списка</p>
+                        <select class="form-container__select" id="other-city" name="city">
+                            <option class="form-container__select-option" value="Москва">Москва</option>
+                            <option class="form-container__select-option" value="Санкт-Петербург">Санкт-Петербург</option> -->
                         </select>
+                    </div>
+                    <ul class="form-container__select-list">
+                        <li class="form-container__select-item">Москва</li>
+                        <li class="form-container__select-item">Санкт-Петербург</li>
+                    </ul>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="place-name">название
@@ -561,7 +578,7 @@
                     <label class="form-container__label form-container__label_type_text" for="party-link">ссылка на
                         сайт</label>
                     <input class="form-container__text-input" id="party-link" name="party-link" required
-                               type="url" value="https://">
+                               type="url" placeholder="https://">
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="party-social">ссылки на
@@ -603,19 +620,25 @@
         <form action="#" class="form-container__form" autocomplete="off">
             <ul class="form-container__list ">
                 <li class="form-container__chosen">
-                    <div class="form-container__item .form-container_checked">
-                        <label class="form-container__label form-container__label_type_radio form-container__btn_type_next"
-                               for="other-2">другое</label>
+                    <div class="form-container__item">
                         <input checked class="form-container__radio" id="other-2" name="other" type="radio">
+                        <label class="form-container__label form-container__label_type_radio"
+                               for="other-2">другое</label>
                     </div>
                 </li>
                 <li>
-                    <label class="form-container__label form-container__label_type_text" for="city">город</label>
-                        <select class="form-container__select form-container__disabled" id="other-city" name="city">
-                            <option disabled selected value="">выберите из списка</option>
-                            <option value="Москва">Москва</option>
-                            <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    <label class="form-container__label form-container__label_type_text" for="other-city">город</label>
+                    <div class="form-container__item form-container__item_theme_gray">
+                        <p class="form-container__fake-placeholder">выберите из списка</p>
+                        <select class="form-container__select" id="other-city" name="city">
+                            <option class="form-container__select-option" value="Москва">Москва</option>
+                            <option class="form-container__select-option" value="Санкт-Петербург">Санкт-Петербург</option> -->
                         </select>
+                    </div>
+                    <ul class="form-container__select-list">
+                        <li class="form-container__select-item">Москва</li>
+                        <li class="form-container__select-item">Санкт-Петербург</li>
+                    </ul>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="place-name">название

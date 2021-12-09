@@ -52,6 +52,13 @@
 @import url(../blocks/form-container/__text-input/form-container__text-input.css);
 @import url(../blocks/form-container/__textarea/form-container__textarea.css);
 @import url(../blocks/form-container/__disabled/form-container__disabled.css);
+@import url(../blocks/form-container/__fake-placeholder/form-container__fake-placeholder.css);
+@import url(../blocks/form-container/__select-list/form-container__select-list.css);
+@import url(../blocks/form-container/__select-list/_visible/form-container__select-list_visible.css);
+@import url(../blocks/form-container/__select-item/form-container__select-item.css);
+@import url(../blocks/form-container/__select-item/_checked/form-container__select-item_checked.css);
+@import url(../blocks/form-container/__fake-placeholder/_chosen/form-container__fake-placeholder_chosen.css);
+@import url(../blocks/form-container/__fake-placeholder/_active/form-container__fake-placeholder_active.css);
 
 @import url(../blocks/form-container/__btn/_type/form-container__btn_type_back.css);
 @import url(../blocks/form-container/__btn/_type/form-container__btn_type_next.css);

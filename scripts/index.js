@@ -1,7 +1,6 @@
 const mainInfoContainer = document.querySelector('.main__info');
 let keyCode;
 
-
 // Get elements from templates
 
 function getWelcomeScreenElement() {
@@ -16,12 +15,22 @@ function getWelcomeScreenElement() {
 }
 
 function getChooseCategoryElement() {
-    return getFormById('#choose-category', navigateFromChooseCategory, getWelcomeScreenElement);
+    const form = getFormById('#choose-category', navigateFromChooseCategory, getWelcomeScreenElement);
+    const formRadioButtons = form.querySelectorAll('.form-container__radio');
+    const nextButton = form.querySelector('.form-container_color_purple');
+
+    for (let formRadioButton of formRadioButtons) {
+        formRadioButton.addEventListener('click', function (evt) {
+            nextButton.removeAttribute('disabled');
+        });
+    }
+    return form;
 }
 
 function navigateFromChooseCategory() {
     const formElement = document.querySelector('.form-container__form');
     const checkedValue = getCheckedRadioButtonId(formElement, '.form-container__radio');
+
     switch (checkedValue) {
         case ('food'):
             return getCafeFormStep2();
@@ -93,6 +102,16 @@ function getFormById(formId, onSubmitElement, onResetElement) {
         phoneInput.addEventListener("blur", mask, false);
         phoneInput.addEventListener("keydown", mask, false);
     }
+    const select = formElement.querySelector('.form-container__fake-placeholder');
+    if (select) {
+        const dropdown = formElement.querySelector('.form-container__select-list');
+        select.addEventListener('click', () => {
+            dropdown.classList.toggle('form-container__select-list_visible');
+            select.classList.toggle('form-container__fake-placeholder_active');
+        });
+        const dropdownOptions = dropdown.querySelectorAll('.form-container__select-item');
+        dropdownOptions.forEach(opt => opt.addEventListener('click', choseOption));
+    }
     return templateElement;
 }
 
@@ -134,5 +153,33 @@ function mask(event) {
     if (event.type == "blur" && this.value.length < 5) this.value = ""
 }
 
+// Select functions
+
+function choseOption(evt) {
+    const dropdownOptions = mainInfoContainer.querySelectorAll('.form-container__select-item')
+    dropdownOptions.forEach(opt => opt.classList.remove('form-container__select-item_checked'));
+    evt.target.classList.add('form-container__select-item_checked');
+    passOptionToSelect(evt.target.textContent)
+}
+
+function passOptionToSelect(val) {
+    const selectOptions = mainInfoContainer.querySelectorAll('.form-container__select-option');
+    for (let opt of selectOptions) {
+        if (opt.value === val) {
+            opt.checked = true;
+        }
+    }
+    const selected = mainInfoContainer.querySelector('.form-container__fake-placeholder');
+    selected.textContent = val;
+    selected.classList.add('form-container__fake-placeholder_chosen');
+    closeDropdown();
+}
+
+function closeDropdown() {
+    const dropdown = mainInfoContainer.querySelector('.form-container__select-list_visible');
+    if (dropdown) dropdown.classList.remove('form-container__select-list_visible');
+    const select = mainInfoContainer.querySelector('.form-container__fake-placeholder_active');
+    if (select) select.classList.remove('form-container__fake-placeholder_active');
+}
 
 addElementToMainInfo(getWelcomeScreenElement());
