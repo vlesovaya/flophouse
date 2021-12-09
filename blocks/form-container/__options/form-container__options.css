@@ -4,5 +4,11 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
+}
 
+@media screen and (max-width: 450px) {
+    .form-container__options {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }

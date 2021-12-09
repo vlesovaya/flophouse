@@ -1,6 +1,8 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
+
 @import url(../blocks/page/page.css);
+@import url(../blocks/page/__main/page__main.css);
 
 @import url(../blocks/button/button.css);
 
@@ -19,7 +21,6 @@
 @import url(../blocks/header/__button/header__button.css);
 
 @import url(../blocks/main/main.css);
-@import url(../blocks/main/__central-block/main__central-block.css);
 @import url(../blocks/main/__title/main__title.css);
 @import url(../blocks/main/__info/main__info.css);
 @import url(../blocks/main/__subtitle/main__subtitle.css);
@@ -50,7 +51,6 @@
 @import url(../blocks/form-container/__select/form-container__select.css);
 @import url(../blocks/form-container/__text-input/form-container__text-input.css);
 @import url(../blocks/form-container/__textarea/form-container__textarea.css);
-@import url(../blocks/form-container/__textarea-obshepit/form-container__textarea-obshepit.css);
 @import url(../blocks/form-container/__disabled/form-container__disabled.css);
 @import url(../blocks/form-container/__fake-placeholder/form-container__fake-placeholder.css);
 @import url(../blocks/form-container/__select-list/form-container__select-list.css);
@@ -59,9 +59,11 @@
 @import url(../blocks/form-container/__select-item/_checked/form-container__select-item_checked.css);
 @import url(../blocks/form-container/__fake-placeholder/_chosen/form-container__fake-placeholder_chosen.css);
 @import url(../blocks/form-container/__fake-placeholder/_active/form-container__fake-placeholder_active.css);
+@import url(../blocks/form-container/__error/form-container__error.css);
+@import url(../blocks/form-container/__error/_visible/form-container__error_visible.css);
 
-@import url(../blocks/form-container/_color_white/form-container_color_white.css);
-@import url(../blocks/form-container/_color_purple/form-container_color_purple.css);
+@import url(../blocks/form-container/__btn/_type/form-container__btn_type_back.css);
+@import url(../blocks/form-container/__btn/_type/form-container__btn_type_next.css);
 
 @import url(../blocks/form-container/__radio-field/form-container__radio-field.css);
 @import url(../blocks/form-container/__radio/_type/form-container__radio_type_round.css);

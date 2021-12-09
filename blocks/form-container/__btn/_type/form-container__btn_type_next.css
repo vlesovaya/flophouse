@@ -1,4 +1,4 @@
-.form-container_color_purple {
+.form-container__btn_type_next {
     background: #7100FF;
     color: #FCFAF7;
     border: none;
@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width: 960px) {
-  .form-container_color_purple {
+  .form-container__btn_type_next {
     padding-left: 54px;
     padding-right: 54px;
     }
