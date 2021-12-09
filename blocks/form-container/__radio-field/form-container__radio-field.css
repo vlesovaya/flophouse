@@ -4,7 +4,6 @@
     border: none;
     border-top: 1px solid #EBE9ED;
     border-bottom: 1px solid #EBE9ED;
-    box-shadow: inset 0px -1px 0px #EBE9ED;
     text-align: start;
     color: #96949E;
     display: flex;
@@ -13,8 +12,7 @@
 
 @media screen and (max-width: 740px) {
     .form-container__radio-field {
-        margin: 0 auto;
+        margin: 0;
         width: 100%;
-        max-width: calc(100% - 40px);
     }
 }
