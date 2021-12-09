@@ -205,7 +205,8 @@
                     <label class="form-container__label form-container__label_type_text" for="cafe-city">город</label>
                     <div class="form-container__item form-container__item_theme_gray">
                         <p class="form-container__fake-placeholder">выберите из списка</p>
-                        <select class="form-container__select" id="cafe-city" name="city">
+                        <select class="form-container__select" id="cafe-city" name="cafe-city" required>
+                            <option class="form-container__select-option" value="" selected>выберите из списка</option>
                             <option class="form-container__select-option" value="Москва">Москва</option>
                             <option class="form-container__select-option" value="Санкт-Петербург">Санкт-Петербург</option>
                         </select>
@@ -214,6 +215,7 @@
                         <li class="form-container__select-item">Москва</li>
                         <li class="form-container__select-item">Санкт-Петербург</li>
                     </ul>
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="place-name">название
@@ -348,7 +350,8 @@
                     <label class="form-container__label form-container__label_type_text" for="event-city">город</label>
                     <div class="form-container__item form-container__item_theme_gray">
                         <p class="form-container__fake-placeholder">выберите из списка</p>
-                        <select class="form-container__select" id="other-city" name="city">
+                        <select class="form-container__select" id="event-city" name="event-city" required>
+                            <option class="form-container__select-option" value="" selected>выберите из списка</option>
                             <option class="form-container__select-option" value="Москва">Москва</option>
                             <option class="form-container__select-option" value="Санкт-Петербург">Санкт-Петербург</option> -->
                         </select>
@@ -357,6 +360,7 @@
                         <li class="form-container__select-item">Москва</li>
                         <li class="form-container__select-item">Санкт-Петербург</li>
                     </ul>
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="event-name">название
@@ -475,7 +479,8 @@
                     <label class="form-container__label form-container__label_type_text" for="party-city">город</label>
                     <div class="form-container__item form-container__item_theme_gray">
                         <p class="form-container__fake-placeholder">выберите из списка</p>
-                        <select class="form-container__select" id="other-city" name="city">
+                        <select class="form-container__select" id="party-city" name="city" required>
+                            <option class="form-container__select-option" value="" selected>выберите из списка</option>
                             <option class="form-container__select-option" value="Москва">Москва</option>
                             <option class="form-container__select-option" value="Санкт-Петербург">Санкт-Петербург</option> -->
                         </select>
@@ -484,6 +489,7 @@
                         <li class="form-container__select-item">Москва</li>
                         <li class="form-container__select-item">Санкт-Петербург</li>
                     </ul>
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="place-name">название
@@ -630,7 +636,8 @@
                     <label class="form-container__label form-container__label_type_text" for="other-city">город</label>
                     <div class="form-container__item form-container__item_theme_gray">
                         <p class="form-container__fake-placeholder">выберите из списка</p>
-                        <select class="form-container__select" id="other-city" name="city">
+                        <select class="form-container__select" id="other-city" name="city" required>
+                            <option class="form-container__select-option" value="" selected>выберите из списка</option>
                             <option class="form-container__select-option" value="Москва">Москва</option>
                             <option class="form-container__select-option" value="Санкт-Петербург">Санкт-Петербург</option> -->
                         </select>
