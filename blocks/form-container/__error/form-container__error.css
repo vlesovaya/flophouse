@@ -26,6 +26,7 @@
 @media screen and (max-width: 740px) {
   .form-container__error{
     font-size: 16px;
+    line-height: 20px;
     padding-left: 28px;
   }
   .form-container__error::before{
