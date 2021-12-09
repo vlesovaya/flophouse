@@ -1,11 +1,11 @@
-.form-container_color_white {
+.form-container__btn_type_back {
     background: #FCFAF7;
     color: black;
     padding: 10px 68px;
 }
 
 @media screen and (max-width: 960px) {
-    .form-container_color_white {
+    .form-container__btn_type_back {
       padding-left: 46px;
       padding-right: 46px;
     }
