@@ -166,7 +166,7 @@ function passOptionToSelect(val) {
     const selectOptions = mainInfoContainer.querySelectorAll('.form-container__select-option');
     for (let opt of selectOptions) {
         if (opt.value === val) {
-            opt.checked = true;
+            opt.selected = true;
         }
     }
     const selected = mainInfoContainer.querySelector('.form-container__fake-placeholder');

@@ -1,31 +1,7 @@
 .form-container__select {
-    display: none;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 10px 24px;
-    border: 2px solid #96949E;
-    border-radius: 26px;
-    outline: none;
-    appearance: none;
-    background-image: url(../../../images/select-icon.svg);
-    background-repeat: no-repeat;
-    background-position: right 19.41px top 50%;
-    background-size: 13.17px 7.59px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 1.33;
-}
-
-.form-container__select:focus {
-    border: 2px solid #7100FF;
-}
-
-@media screen and (max-width: 450px) {
-    .form-container__select {
-        font-size: 16px;
-        line-height: 20px;
-    }
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
 }
