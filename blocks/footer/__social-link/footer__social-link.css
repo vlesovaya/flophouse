@@ -1,9 +1,0 @@
-/* элемент списка li */
-.footer__social-link {
-    margin: 0px 0px 0px 24px;
-    padding: 0;
-}
-
-.footer__social-link:nth-child(1) {
-    margin: 0;
-}
