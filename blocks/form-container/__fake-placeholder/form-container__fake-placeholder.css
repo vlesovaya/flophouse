@@ -1,8 +1,8 @@
 .form-container__fake-placeholder {
   margin: 0;
   text-align: start;
+  font-weight: 400;
   color: #96949E;
-  padding: 0;
   width: 100%;
   cursor: pointer;
   background-image: url(../../../images/select-icon.svg);
@@ -12,7 +12,6 @@
   border: 2px solid #96949E;
   border-radius: 26px;
   padding: 12px 24px;
-  width: 100%;
 }
 
 .form-container__fake-placeholder::after {

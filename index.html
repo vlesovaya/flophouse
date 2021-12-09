@@ -151,23 +151,23 @@
             <ul class="form-container__list">
                 <li class="form-container__item">
                     <input class="form-container__radio" id="food" name="choose-category" type="radio">
-                    <label class="form-container__label form-container__label_type_radio" for="food">
+                    <label class="form-container__label form-container__label_type_radio form-container__label_type_category" for="food">
                         кафе/бар/ресторан
                     </label>
                 </li>
                 <li class="form-container__item">
                     <input class="form-container__radio" id="education" name="choose-category" type="radio">
-                    <label class="form-container__label form-container__label_type_radio" for="education">
+                    <label class="form-container__label form-container__label_type_radio form-container__label_type_category" for="education">
                         мастер-класс/лекция</label>
                 </li>
                 <li class="form-container__item">
                     <input class="form-container__radio" id="party" name="choose-category" type="radio">
-                    <label class="form-container__label form-container__label_type_radio" for="party">
+                    <label class="form-container__label form-container__label_type_radio form-container__label_type_category" for="party">
                         посиделки/вечеринка</label>
                 </li>
                 <li class="form-container__item">
                     <input class="form-container__radio" id="other" name="choose-category" type="radio">
-                    <label class="form-container__label form-container__label_type_radio" for="other">другое</label>
+                    <label class="form-container__label form-container__label_type_radio form-container__label_type_category" for="other">другое</label>
                 </li>
             </ul>
             <div class="main__button-bar">
@@ -198,7 +198,7 @@
                         <input checked class="form-container__radio" id="food_chosen"
                            name="choose-category"
                            type="radio">
-                        <label class="form-container__label form-container__label_type_radio"
+                        <label class="form-container__label form-container__label_type_radio form-container__label_type_category"
                                for="food">кафе/бар/ресторан</label>
                     </div>
                 </li>
@@ -340,27 +340,35 @@
                     <div class="form-container__item">
                         <input checked class="form-container__radio" id="event-chosen-step-2"
                                name="event-form-step-2" type="radio">
-                        <label class="form-container__label form-container__label_type_radio" for="event-chosen-step-2">
+                        <label class="form-container__label form-container__label_type_radio form-container__label_type_category"
+                               for="event-chosen-step-2">
                             мастер-класс/лекция</label>
                     </div>
                 </li>
                 <li>
                     <fieldset class="form-container__radio-field form-container__radio-field_type_input-padding">
-                        <input checked class="form-container__radio form-container__radio_type_round"
-                               id="online-event" name="party-format" type="radio" value="онлайн">
                         <label class="form-container__label form-container__label_type_round form-container__label_type_event"
-                               for="online-event">онлайн</label>
+                               for="online-event">
+                            <input checked class="form-container__radio form-container__radio_type_round"
+                                   id="online-event" name="party-format" type="radio" value="онлайн">
+                            <span class="form-container__check-box"></span>
+                            онлайн
+                        </label>
 
-                        <input class="form-container__radio form-container__radio_type_round" id="offline-event"
-                               name="party-format" type="radio" value="офлайн">
+
                         <label class="form-container__label form-container__label_type_round form-container__label_type_event"
-                               for="offline-event">офлайн</label>
+                               for="offline-event">
+                            <input class="form-container__radio form-container__radio_type_round" id="offline-event"
+                                   name="party-format" type="radio" value="офлайн">
+                            <span class="form-container__check-box"></span>
+                            офлайн
+                        </label>
                     </fieldset>
                     <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="event-city">город</label>
-                    <div class="form-container__item form-container__item_theme_gray">
+                    <div class="form-container__item">
                         <p class="form-container__fake-placeholder">выберите из списка</p>
                         <select class="form-container__select" id="event-city" name="event-city" required>
                             <option class="form-container__select-option" value="" selected>выберите из списка</option>
@@ -492,7 +500,7 @@
                     <div class="form-container__item">
                         <input checked class="form-container__radio" id="party-chosen-step-2"
                                name="party-chosen-step-2" type="radio">
-                        <label class="form-container__label form-container__label_type_radio"
+                        <label class="form-container__label form-container__label_type_radio form-container__label_type_category"
                                for="party-chosen-step-2">посиделки/вечеринка</label>
                     </div>
                 </li>
@@ -515,22 +523,26 @@
                 <li>
                     <label class="form-container__label form-container__label_type_text" for="place-name">название
                         мероприятия</label>
-                    <input class="form-container__text-input" id="party-name" name="party-name"
+                    <input class="form-container__text-input form-container__text-input_type_margin" id="party-name" name="party-name"
                                placeholder="введите название" required type="text">
                     <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li>
                     <fieldset class="form-container__radio-field">
-                        <input checked class="form-container__radio form-container__radio_type_round"
-                               id="party-format-open" name="party-format" type="radio" value="открытое мероприятие">
-                        <label class="form-container__label form-container__label_type_round" for="party-format-open">открытое
-                            мероприятие</label>
+                        <label class="form-container__label form-container__label_type_round" for="party-format-open">
+                            <input checked class="form-container__radio form-container__radio_type_round"
+                                   id="party-format-open" name="party-format" type="radio" value="открытое мероприятие">
+                            <span class="form-container__check-box"></span>
+                            открытое мероприятие
+                        </label>
                         <p class="form-container__capture">адрес отобразим в карточке события</p>
 
-                        <input class="form-container__radio form-container__radio_type_round" id="party-format-close"
-                               name="party-format" type="radio" value="закрытое мероприятие">
-                        <label class="form-container__label form-container__label_type_round" for="party-format-close">закрытое
-                            мероприятие</label>
+                        <label class="form-container__label form-container__label_type_round" for="party-format-close">
+                            <input class="form-container__radio form-container__radio_type_round" id="party-format-close"
+                                   name="party-format" type="radio" value="закрытое мероприятие">
+                            <span class="form-container__check-box"></span>
+                            закрытое мероприятие
+                        </label>
                         <p class="form-container__capture">адрес увидят только, те&nbsp;кому вы&nbsp;оправите ссылку на&nbsp;событие</p>
 
                     </fieldset>
@@ -660,7 +672,7 @@
                 <li class="form-container__chosen">
                     <div class="form-container__item">
                         <input checked class="form-container__radio" id="other-2" name="other" type="radio">
-                        <label class="form-container__label form-container__label_type_radio"
+                        <label class="form-container__label form-container__label_type_radio form-container__label_type_category"
                                for="other-2">другое</label>
                     </div>
                 </li>
