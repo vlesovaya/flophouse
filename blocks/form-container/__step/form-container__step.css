@@ -17,3 +17,11 @@
         max-width: calc(100% - 40px);
     }
 }
+
+@media screen and (max-width: 450px) {
+    .form-container__step {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

@@ -15,3 +15,9 @@
         max-width: calc(100% - 40px);
     }
 }
+
+@media screen and (max-width: 450px) {
+    .form-container__title {
+        margin-bottom: 15px;
+    }
+}
