@@ -2,18 +2,10 @@
     background: #7100FF;
     color: #FCFAF7;
     border: none;
-    padding: 12px 76px;
 }
 
 .form-container__btn_type_next:disabled {
     background-color: #EBE9ED;
     color: #96949E;
     border: 2px solid #96949E;
-}
-
-@media screen and (max-width: 960px) {
-  .form-container__btn_type_next {
-    padding-left: 54px;
-    padding-right: 54px;
-    }
 }

@@ -362,7 +362,7 @@
                             <input class="form-container__radio form-container__radio_type_round" id="offline-event"
                                    name="party-format" type="radio" value="офлайн">
                             <span class="form-container__check-box"></span>
-                            офлайн
+                            оффлайн
                         </label>
                     </fieldset>
                     <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
@@ -522,7 +522,7 @@
                     <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li class="form-container__list-element">
-                    <label class="form-container__label form-container__label_type_text" for="place-name">название
+                    <label class="form-container__label form-container__label_type_text form-container__label_type_text" for="place-name">название
                         мероприятия</label>
                     <input class="form-container__text-input form-container__text-input_type_margin" id="party-name" name="party-name"
                                placeholder="введите название" required type="text">
@@ -676,6 +676,27 @@
                         <label class="form-container__label form-container__label_type_radio form-container__label_type_category"
                                for="other-2">другое</label>
                     </div>
+                </li>
+                <li class="form-container__list-element form-container__list-element_type_radio">
+                    <fieldset class="form-container__radio-field form-container__radio-field_type_event">
+                        <label class="form-container__label form-container__label_type_round form-container__label_type_event"
+                               for="online-other">
+                            <input checked class="form-container__radio form-container__radio_type_round"
+                                   id="online-other" name="other-format" type="radio" value="онлайн">
+                            <span class="form-container__check-box"></span>
+                            онлайн
+                        </label>
+
+
+                        <label class="form-container__label form-container__label_type_round form-container__label_type_event"
+                               for="offline-other">
+                            <input class="form-container__radio form-container__radio_type_round" id="offline-other"
+                                   name="other-format" type="radio" value="офлайн">
+                            <span class="form-container__check-box"></span>
+                            оффлайн
+                        </label>
+                    </fieldset>
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li class="form-container__list-element">
                     <label class="form-container__label form-container__label_type_text" for="other-city">город</label>

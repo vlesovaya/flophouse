@@ -62,8 +62,9 @@
 @import url(../blocks/form-container/__error/form-container__error.css);
 @import url(../blocks/form-container/__error/_visible/form-container__error_visible.css);
 
-@import url(../blocks/form-container/__btn/_type/form-container__btn_type_back.css);
+@import url(../blocks/form-container/__btn/_type/form-container__btn_type_cancel.css);
 @import url(../blocks/form-container/__btn/_type/form-container__btn_type_next.css);
+@import url(../blocks/form-container/__btn/_type/form-container__btn_type_back.css);
 
 @import url(../blocks/form-container/__radio-field/form-container__radio-field.css);
 @import url(../blocks/form-container/__radio/_type/form-container__radio_type_round.css);
