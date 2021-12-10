@@ -181,7 +181,7 @@
     </div>
 </template>
 <template id="cafe-form-step-2">
-    <div class="form-container main__central-block">
+    <div class="form-container page__main">
         <p class="form-container__step">шаг 2&nbsp;из&nbsp;4</p>
         <div class="form-container__info">
             <h2 class="form-container__title">заполните форму</h2>
@@ -203,9 +203,9 @@
                                for="food">кафе/бар/ресторан</label>
                     </div>
                 </li>
-                <li>
+                <li class="form-container__list-element">
                     <label class="form-container__label form-container__label_type_text" for="cafe-city">город</label>
-                    <div class="form-container__item form-container__item_theme_gray">
+                    <div class="form-container__item form-container__item_type_select">
                         <p class="form-container__fake-placeholder">выберите из списка</p>
                         <select class="form-container__select" id="cafe-city" name="cafe-city" required>
                             <option class="form-container__select-option" value="" selected>выберите из списка</option>
@@ -257,7 +257,7 @@
     </div>
 </template>
 <template id="cafe-form-step-3">
-    <div class="form-container main__central-block">
+    <div class="form-container page__main">
         <p class="form-container__step">шаг 3&nbsp;из&nbsp;4</p>
         <div class="form-container__info">
             <h2 class="form-container__title">укажите контакты и&nbsp;часы работы</h2>
@@ -326,7 +326,7 @@
     </div>
 </template>
 <template id="event-form-step-2">
-    <div class="form-container main__central-block">
+    <div class="form-container page__main">
         <p class="form-container__step">шаг 2&nbsp;из&nbsp;4</p>
         <div class="form-container__info">
             <h2 class="form-container__title">заполните форму</h2>
@@ -346,8 +346,8 @@
                             мастер-класс/лекция</label>
                     </div>
                 </li>
-                <li class="form-container__list-element">
-                    <fieldset class="form-container__radio-field form-container__radio-field_type_input-padding">
+                <li class="form-container__list-element form-container__list-element_type_radio">
+                    <fieldset class="form-container__radio-field form-container__radio-field_type_event">
                         <label class="form-container__label form-container__label_type_round form-container__label_type_event"
                                for="online-event">
                             <input checked class="form-container__radio form-container__radio_type_round"
@@ -367,9 +367,9 @@
                     </fieldset>
                     <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
-                <li>
+                <li class="form-container__list-element">
                     <label class="form-container__label form-container__label_type_text" for="event-city">город</label>
-                    <div class="form-container__item">
+                    <div class="form-container__item form-container__item_type_select">
                         <p class="form-container__fake-placeholder">выберите из списка</p>
                         <select class="form-container__select" id="event-city" name="event-city" required>
                             <option class="form-container__select-option" value="" selected>выберите из списка</option>
@@ -426,7 +426,7 @@
     </div>
 </template>
 <template id="event-form-step-3">
-    <div class="form-container main__central-block">
+    <div class="form-container page__main">
         <p class="form-container__step">шаг 3&nbsp;из&nbsp;4</p>
         <div class="form-container__info">
             <h2 class="form-container__title">укажите контакты и&nbsp;часы работы</h2>
@@ -486,7 +486,7 @@
     </div>
 </template>
 <template id="party-form-step-2">
-    <div class="form-container main__central-block">
+    <div class="form-container page__main">
         <p class="form-container__step">шаг 2&nbsp;из&nbsp;4</p>
         <div class="form-container__info">
             <h2 class="form-container__title">заполните форму</h2>
@@ -505,9 +505,9 @@
                                for="party-chosen-step-2">посиделки/вечеринка</label>
                     </div>
                 </li>
-                <li>
+                <li class="form-container__list-element">
                     <label class="form-container__label form-container__label_type_text" for="party-city">город</label>
-                    <div class="form-container__item form-container__item_theme_gray">
+                    <div class="form-container__item form-container__item_type_select">
                         <p class="form-container__fake-placeholder">выберите из списка</p>
                         <select class="form-container__select" id="party-city" name="city" required>
                             <option class="form-container__select-option" value="" selected>выберите из списка</option>
@@ -528,8 +528,8 @@
                                placeholder="введите название" required type="text">
                     <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
-                <li class="form-container__list-element">
-                    <fieldset class="form-container__radio-field">
+                <li class="form-container__list-element form-container__list-element_type_radio">
+                    <fieldset class="form-container__radio-field form-container__radio-field_type_party">
                         <label class="form-container__label form-container__label_type_round" for="party-format-open">
                             <input checked class="form-container__radio form-container__radio_type_round"
                                    id="party-format-open" name="party-format" type="radio" value="открытое мероприятие">
@@ -584,7 +584,7 @@
     </div>
 </template>
 <template id="party-form-step-3">
-    <div class="form-container main__central-block">
+    <div class="form-container page__main">
         <p class="form-container__step">шаг 3&nbsp;из&nbsp;4</p>
         <div class="form-container__info">
             <h2 class="form-container__title">укажите контакты и&nbsp;часы работы</h2>
@@ -659,7 +659,7 @@
     </div>
 </template>
 <template id="other-form-step-2">
-    <div class="form-container main__central-block">
+    <div class="form-container page__main">
         <p class="form-container__step">шаг 2&nbsp;из&nbsp;4</p>
         <div class="form-container__info">
             <h2 class="form-container__title">заполните форму</h2>
@@ -677,9 +677,9 @@
                                for="other-2">другое</label>
                     </div>
                 </li>
-                <li>
+                <li class="form-container__list-element">
                     <label class="form-container__label form-container__label_type_text" for="other-city">город</label>
-                    <div class="form-container__item form-container__item_theme_gray">
+                    <div class="form-container__item form-container__item_type_select">
                         <p class="form-container__fake-placeholder">выберите из списка</p>
                         <select class="form-container__select" id="other-city" name="city" required>
                             <option class="form-container__select-option" value="" selected>выберите из списка</option>
@@ -734,7 +734,7 @@
     </div>
 </template>
 <template id="other-form-step-3">
-    <div class="form-container main__central-block">
+    <div class="form-container page__main">
         <p class="form-container__step">шаг 3&nbsp;из&nbsp;4</p>
         <div class="form-container__info">
             <h2 class="form-container__title">укажите контакты и&nbsp;часы работы</h2>
