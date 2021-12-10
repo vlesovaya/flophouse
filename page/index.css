@@ -22,6 +22,7 @@
 
 @import url(../blocks/main/main.css);
 @import url(../blocks/main/__title/main__title.css);
+@import url(../blocks/main/__template-title/main__template-title.css);
 @import url(../blocks/main/__info/main__info.css);
 @import url(../blocks/main/__subtitle/main__subtitle.css);
 @import url(../blocks/main/__steps/main__steps.css);
@@ -42,7 +43,6 @@
 @import url(../blocks/form-container/__item/form-container__item.css);
 @import url(../blocks/form-container/__label/form-container__label.css);
 @import url(../blocks/form-container/__label/_type/form-container__label_type_radio.css);
-@import url(../blocks/form-container/_checked/form-container_checked.css);
 @import url(../blocks/form-container/__btn/form-container__btn.css);
 @import url(../blocks/form-container/__text/form-container__text.css);
 @import url(../blocks/form-container/__options/form-container__options.css);

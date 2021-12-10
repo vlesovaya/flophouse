@@ -1,0 +1,23 @@
+.main__template-title {
+    display: none;
+}
+
+
+@media screen and (max-width: 740px) {
+    .main__template-title {
+        display: block;
+        max-width: calc(100% - 40px);
+        margin: 20px auto 0;
+        font-size: 64px;
+        line-height: 64px;
+        font-weight: 500;
+        letter-spacing: -0.02em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main__template-title {
+        font-size: 44px;
+        line-height: 44px;
+    }
+}
