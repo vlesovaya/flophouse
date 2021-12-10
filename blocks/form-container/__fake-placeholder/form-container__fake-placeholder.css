@@ -11,7 +11,7 @@
   background-color: #fff;
   border: 2px solid #96949E;
   border-radius: 26px;
-  padding: 12px 24px;
+  padding: 10px 24px;
 }
 
 .form-container__fake-placeholder::after {

@@ -4,16 +4,10 @@
     position: relative;
 }
 
-
-@media screen and (max-width: 740px) {
-  .form-container__chosen {
-      padding-bottom: 15px;
-  }
-  .form-container__chosen::after {
+.form-container__chosen::after {
     content: '';
     width: 100%;
     border-bottom: 1px solid #EBE9ED ;
     position: absolute;
     bottom: 0;
-}
 }
