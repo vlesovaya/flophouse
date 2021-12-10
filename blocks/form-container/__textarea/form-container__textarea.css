@@ -3,3 +3,9 @@
     min-height: 132px;
     resize: none
 }
+
+@media screen and (max-width: 450px) {
+    .form-container__textarea {
+        min-height: 100px;
+    }
+}

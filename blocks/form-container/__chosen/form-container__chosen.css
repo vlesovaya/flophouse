@@ -7,7 +7,7 @@
 
 @media screen and (max-width: 740px) {
   .form-container__chosen {
-      padding-bottom: 20px;
+      padding-bottom: 15px;
   }
   .form-container__chosen::after {
     content: '';
