@@ -1,0 +1,10 @@
+.form-container__list-element {
+
+}
+
+@media screen and (max-width: 740px) {
+  .form-container__list-element {
+    margin: 0 auto;
+    max-width: calc(100% - 40px);
+  }
+}
