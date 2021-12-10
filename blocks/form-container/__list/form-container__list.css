@@ -7,7 +7,7 @@
 
 @media screen and (max-width: 740px) {
     .form-container__list {
-        margin: 0 20px 20px;
-        max-width: calc(100% - 40px/2);
+        margin-bottom: 20px;
+        
     }
 }

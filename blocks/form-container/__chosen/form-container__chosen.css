@@ -1,4 +1,19 @@
 .form-container__chosen {
     width: 100%;
     padding-bottom: 8px;
+    position: relative;
+}
+
+
+@media screen and (max-width: 740px) {
+  .form-container__chosen {
+      padding-bottom: 20px;
+  }
+  .form-container__chosen::after {
+    content: '';
+    width: 100%;
+    border-bottom: 1px solid #EBE9ED ;
+    position: absolute;
+    bottom: 0;
+}
 }

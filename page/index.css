@@ -74,6 +74,8 @@
 @import url(../blocks/form-container/__label/_type/form-container__label_type_category.css);
 @import url(../blocks/form-container/__text-input/_type/form-container__text-input_type_margin.css);
 
+@import url(../blocks/form-container/__list-element/form-container__list-element.css);
+
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__shell/footer__shell.css);
 @import url(../blocks/footer/__illustration/footer__illustration.css);
@@ -89,3 +91,5 @@
 @import url(../blocks/footer/__list-social/footer__list-social.css);
 @import url(../blocks/footer/__social-link/footer__social-link.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);
+
+

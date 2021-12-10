@@ -12,6 +12,7 @@
 @media screen and (max-width: 740px) {
     .form-container__item {
         margin: 0 auto 12px;
-        width: 100%;
+        max-width: calc(100% - 40px);
+        
     }
 }
