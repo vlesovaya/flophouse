@@ -1,6 +1,6 @@
 .form-container__select-item_checked {
-  background-image: url(../../../../images/check_icon_black.svg);
-  background-repeat: no-repeat;
-  background-position: bottom 50% right 24px;
+    background-image: url(../../../../images/check_icon_black.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 50% right 24px;
 
 }
