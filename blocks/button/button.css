@@ -7,13 +7,15 @@
     font-size: 18px;
     line-height: 24px;
     color: #FCFAF7;
-    opacity: 1;
-    /*transition: 0.4s linear;*/
 }
 
 .button:hover {
+    background-color: #5100B8;
     cursor: pointer;
-    opacity: .7;
-    text-align: center;
-    font-style: normal;
+}
+
+.button:disabled {
+    color: #96949E;
+    background-color: #EBE9ED;
+    border: none;
 }

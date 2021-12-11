@@ -11,8 +11,7 @@
 }
 
 .form-container__radio:focus + .form-container__label_type_radio {
-    background-color: #ffffff;
-    color: #3B3748;
+    color: #7100FF;
     border: 2px solid #7100FF;
 }
 

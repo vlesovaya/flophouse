@@ -1,36 +1,37 @@
 .form-container__error {
-  display: none;
-  box-sizing: border-box;
-  margin: 8px 24px 0;
-  padding: 0 0 0 36px;
-  color: #F40934;
-  background-color: transparent;
-  text-align: start;
-  position: relative;
-  line-height: 24px;
-  vertical-align: middle;
+    display: none;
+    box-sizing: border-box;
+    margin: 8px 24px 0;
+    padding: 0 0 0 36px;
+    color: #F40934;
+    background-color: transparent;
+    text-align: start;
+    position: relative;
+    line-height: 24px;
+    vertical-align: middle;
 }
 
-.form-container__error::before{
-  content: '';
-  display: block;
-  background-image: url(../../../images/error-icon.svg);
-  background-size: contain;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: 0;
-  left: 0;
+.form-container__error::before {
+    content: '';
+    display: block;
+    background-image: url(../../../images/error-icon.svg);
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 @media screen and (max-width: 740px) {
-  .form-container__error{
-    font-size: 16px;
-    line-height: 20px;
-    padding-left: 28px;
-  }
-  .form-container__error::before{
-    width: 20px;
-    height: 20px;
-  }
+    .form-container__error {
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 28px;
+    }
+
+    .form-container__error::before {
+        width: 20px;
+        height: 20px;
+    }
 }

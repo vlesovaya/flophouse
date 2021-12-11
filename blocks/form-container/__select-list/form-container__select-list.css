@@ -1,11 +1,11 @@
 .form-container__select-list {
-  display: none;
-  box-sizing: border-box;
-  list-style-type: none;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 24px 0;
-  background-color: #fff;
-  box-shadow: 0 4px 12px rgba(59, 55, 72, 0.12);
-  border-radius: 24px;
+    display: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(59, 55, 72, 0.12);
+    border-radius: 24px;
 }

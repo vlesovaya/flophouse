@@ -7,7 +7,7 @@
 .form-container__chosen::after {
     content: '';
     width: 100%;
-    border-bottom: 1px solid #EBE9ED ;
+    border-bottom: 1px solid #EBE9ED;
     position: absolute;
     bottom: 0;
 }
