@@ -4,8 +4,9 @@
     border: none;
 }
 
-.form-container__btn_type_next:disabled {
-    background-color: #EBE9ED;
-    color: #96949E;
-    border: 2px solid #96949E;
-}
+/*.form-container__btn_type_next:disabled {*/
+/*    background-color: #EBE9ED;*/
+/*    color: #96949E;*/
+/*    border: none;*/
+/*}*/
+
