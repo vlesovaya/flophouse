@@ -1,0 +1,13 @@
+.form-container__list {
+    list-style-type: none;
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: start;
+}
+
+@media screen and (max-width: 740px) {
+    .form-container__list {
+        margin-bottom: 20px;
+
+    }
+}

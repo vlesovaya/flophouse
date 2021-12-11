@@ -1,0 +1,9 @@
+.header__nav {
+    min-width: 31.46%;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__nav {
+        display: none;
+    }
+}

@@ -1,0 +1,36 @@
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 531px;
+    grid-template-rows: repeat(2, fit-content);
+    grid-template-areas: "grid-step grid-step"
+                        "grid-info grid-form";
+    row-gap: 12px;
+    column-gap: 40px;
+    max-width: 880px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 960px) {
+    .form-container {
+        max-width: calc(100% - 40px);
+        grid-template-columns: 1fr 1fr;
+        column-gap: 25px;
+    }
+
+}
+
+@media screen and (max-width: 740px) {
+    .form-container {
+        max-width: unset;
+        grid-template-columns: 1fr;
+        grid-template-areas: "grid-step"
+                         "grid-info"
+                         "grid-form";
+        width: 100%;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+

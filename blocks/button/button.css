@@ -1,0 +1,21 @@
+.button {
+    border: none;
+    border-radius: 26px;
+    background: #7100FF;
+    font-family: "TT Firs Neue", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FCFAF7;
+}
+
+.button:hover {
+    background-color: #5100B8;
+    cursor: pointer;
+}
+
+.button:disabled {
+    color: #96949E;
+    background-color: #EBE9ED;
+    border: none;
+}

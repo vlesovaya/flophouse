@@ -1,0 +1,26 @@
+.form-container__step {
+    margin: 0;
+    padding: 0;
+    grid-area: grid-step;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.33;
+    width: 100%;
+    max-width: calc(100% - 40px);
+}
+
+@media screen and (max-width: 740px) {
+    .form-container__step {
+        margin: 20px auto 0;
+        width: 100%;
+        max-width: calc(100% - 40px);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .form-container__step {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

@@ -1,0 +1,18 @@
+.form-container__text-input {
+    width: 100%;
+    padding: 10px 24px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid #96949E;
+    border-radius: 26px;
+    text-align: start;
+}
+
+.form-container__text-input::placeholder {
+    color: #96949E;
+}
+
+
+.form-container__text-input:focus {
+    border: 2px solid #7100FF;
+}

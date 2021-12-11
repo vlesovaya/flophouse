@@ -1,0 +1,6 @@
+@media screen and (max-width: 740px) {
+    .form-container__list-element_type_radio {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}

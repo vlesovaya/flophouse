@@ -1,0 +1,13 @@
+.form-container__label_type_round {
+    padding-left: 31px;
+    position: relative;
+    color: #3B3748;
+}
+
+.form-container__check-box {
+    position: absolute;
+    background-image: url("../../../../images/radio-unchecked.svg");
+    margin-left: -31px;
+    width: 22px;
+    height: 22px;
+}

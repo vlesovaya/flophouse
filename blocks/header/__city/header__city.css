@@ -1,0 +1,5 @@
+.header__city {
+    min-width: 20.50%;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,10 @@
+.form-container__btn_type_back {
+    background-color: #FCFAF7;
+    color: black;
+}
+
+.form-container__btn_type_back:hover {
+    background-color: #FAFAFA;
+    border: 2px solid #5100B8;
+    color: #5100B8;
+}

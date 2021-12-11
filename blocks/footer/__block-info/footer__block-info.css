@@ -1,0 +1,14 @@
+.footer__block-info {
+    margin: 0;
+}
+
+@media screen and (min-width: 850px) {
+    .footer__block-info {
+        margin: 0;
+        width: initial;
+    }
+}
+
+.footer__block-info:last-child {
+    margin: 0;
+}

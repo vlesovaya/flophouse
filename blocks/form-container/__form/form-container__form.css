@@ -1,0 +1,13 @@
+.form-container__form {
+    grid-area: grid-form;
+    text-align: end;
+    margin-top: 12px;
+}
+
+@media screen and (max-width: 740px) {
+    .form-container__form {
+        border-top: 1px solid #EBE9ED;
+        padding-top: 20px;
+        margin: 0;
+    }
+}

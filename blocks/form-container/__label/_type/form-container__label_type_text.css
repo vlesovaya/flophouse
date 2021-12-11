@@ -1,0 +1,22 @@
+.form-container__label_type_text {
+    display: block;
+    margin: 32px 0 8px;
+    text-align: left;
+    padding: 0 24px;
+    color: #96949E;
+}
+
+.form-container__label_type_text:first-of-type {
+    margin: 20px 0 8px;
+}
+
+@media screen and (max-width: 450px) {
+    .form-container__label_type_text {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .form-container__label_type_text:first-of-type {
+        margin-top: 17px;
+    }
+}

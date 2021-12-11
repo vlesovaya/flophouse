@@ -1,0 +1,5 @@
+@media screen and (max-width: 740px) {
+    .form-container__text-input_type_margin {
+        margin-bottom: 20px;
+    }
+}

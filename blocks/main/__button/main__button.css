@@ -1,0 +1,14 @@
+.main__button {
+    width: 197px;
+    margin: 32px 0 40px;
+    padding: 12px 24px;
+}
+
+@media screen and (max-width: 740px) {
+    .main__button {
+        margin: 0;
+        width: 320px;
+        height: 44px;
+        padding: 12px 20px;
+    }
+}

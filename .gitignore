@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# WebShtorm files
+.idea/
+
+# VS code files
+.vscode/

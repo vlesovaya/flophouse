@@ -1,0 +1,10 @@
+.main__info {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 740px) {
+    .main__info {
+        width: 100%;
+    }
+}

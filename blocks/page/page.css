@@ -1,0 +1,23 @@
+.page {
+    margin: 0;
+    width: 100%;
+    min-width: 320px;
+    background-color: #FCFAF7;
+    font-family: "TT Firs Neue", "Arial", sans-serif;
+    font-weight: 400;
+    color: #3B3748;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+@media screen and (max-width: 740px) {
+    .page {
+        min-height: 100%;
+        position: relative;
+    }
+}

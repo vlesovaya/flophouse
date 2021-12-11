@@ -1,0 +1,18 @@
+.form-container__item {
+    box-sizing: border-box;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 12px 0;
+    position: relative;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 740px) {
+    .form-container__item {
+        margin: 0 auto 12px;
+        max-width: calc(100% - 40px);
+
+    }
+}

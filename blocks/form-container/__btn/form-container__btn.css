@@ -1,0 +1,20 @@
+.form-container__btn {
+    margin: 0;
+    padding: 10px 0;
+    background-color: transparent;
+    border: 2px solid #3B3748;
+    box-sizing: border-box;
+    width: 204px;
+}
+
+.form-container__btn:first-of-type {
+    margin-right: 12px;
+}
+
+@media screen and (max-width: 960px) {
+    .form-container__btn {
+        font-size: 16px;
+        line-height: 20px;
+        width: 153.5px;
+    }
+}

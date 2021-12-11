@@ -1,0 +1,10 @@
+.form-container__radio_type_round {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.form-container__radio_type_round:checked + .form-container__check-box {
+    background-image: url("../../../../images/radio-checked.svg");
+}

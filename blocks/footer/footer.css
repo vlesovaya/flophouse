@@ -1,0 +1,16 @@
+.footer {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    background-color: #ebe9ed;
+    margin: 0 auto;
+    padding: 0;
+    max-height: 360px;
+}
+
+@media screen and (max-width: 850px) {
+    .footer {
+        display: none;
+    }
+}

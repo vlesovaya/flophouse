@@ -1,0 +1,12 @@
+.header__map-sign {
+    background-image: url(../../../images/map_icon.svg);
+    width: 24px;
+    height: 24px;
+    margin-right: 9px;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__map-sign {
+        display: none;
+    }
+}
