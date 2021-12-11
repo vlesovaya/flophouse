@@ -2,10 +2,6 @@
   margin-bottom: 32px;
 }
 
-.form-container__list-element:last-child {
-  max-height: 164px;
-}
-
 @media screen and (max-width: 740px) {
   .form-container__list-element {
     margin: 0 auto;

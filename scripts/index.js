@@ -86,6 +86,7 @@ function getFormById(formId, onSubmitElement, onResetElement) {
     const template = document.querySelector(formId).content;
     const templateElement = template.querySelector('.form-container').cloneNode(true);
     const formElement = templateElement.querySelector('.form-container__form');
+
     formElement.addEventListener('submit', function (evt) {
         evt.preventDefault();
         addElementToMainInfo(onSubmitElement());
@@ -112,6 +113,33 @@ function getFormById(formId, onSubmitElement, onResetElement) {
         const dropdownOptions = dropdown.querySelectorAll('.form-container__select-item');
         dropdownOptions.forEach(opt => opt.addEventListener('click', choseOption));
     }
+    let isValidable = false;
+    if (formElement.classList.contains('form-container__form-with-validation')) isValidable = true;
+    if (isValidable) {
+        const submitBtn = formElement.querySelector('button[type="submit"]');
+        const inputs = formElement.querySelectorAll('.form-container__text-input');
+
+        submitBtn.addEventListener('click', () => {
+            const errors = formElement.querySelectorAll('.form-container__error');
+            errors.forEach(err => err.classList.remove('form-container__error_visible'));
+            for (let input of inputs) {
+                if (input.type === 'tel') {
+                    if (input.value.length !== 17) {
+                        input.validity = false;
+                        showError(input);
+                    }
+                }
+                if (input && !input.validity.valid) {
+                    showError(input);
+                }
+            }
+            if (select) {
+                if (select.textContent !== 'Москва' && select.textContent !== 'Санкт-Петербург') {
+                    showError(select);
+                }
+            }
+        })
+    }
     return templateElement;
 }
 
@@ -126,6 +154,10 @@ function getCheckedRadioButtonId(form, radioButtonClass) {
         }
     }
     return returnId;
+}
+function showError(el) {
+    const error = el.closest('.form-container__list-element').querySelector('.form-container__error');
+    error.classList.add('form-container__error_visible');
 }
 
 function mask(event) {
@@ -183,3 +215,4 @@ function closeDropdown() {
 }
 
 addElementToMainInfo(getWelcomeScreenElement());
+
