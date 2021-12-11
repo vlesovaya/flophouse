@@ -192,7 +192,7 @@
                 <li class="form-container__option">процент от&nbsp;продаж определенных позиций или всего меню</li>
             </ul>
         </div>
-        <form action="#" class="form-container__form" autocomplete="off">
+        <form action="#" class="form-container__form form-container__form-with-validation" autocomplete="off">
             <ul class="form-container__list">
                 <li class="form-container__chosen">
                     <div class="form-container__item">
@@ -207,7 +207,7 @@
                     <label class="form-container__label form-container__label_type_text" for="cafe-city">город</label>
                     <div class="form-container__item form-container__item_type_select">
                         <p class="form-container__fake-placeholder">выберите из списка</p>
-                        <select class="form-container__select" id="cafe-city" name="cafe-city" required>
+                        <select class="form-container__select" id="cafe-city" name="cafe-city">
                             <option class="form-container__select-option" value="" selected>выберите из списка</option>
                             <option class="form-container__select-option" value="Москва">Москва</option>
                             <option class="form-container__select-option" value="Санкт-Петербург">Санкт-Петербург</option>
@@ -229,7 +229,7 @@
                 <li class="form-container__list-element">
                     <label class="form-container__label form-container__label_type_text" for="contact-name">контактное
                         лицо</label>
-                        <input class="form-container__text-input" id="contact-name" minlength="5"
+                        <input class="form-container__text-input" id="contact-name" minlength="2"
                                name="contact-name" placeholder="введите ФИО" required type="text">
                     <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
@@ -264,7 +264,7 @@
             <p class="form-container__text">Эти данные появятся в&nbsp;описании карточки вашего мероприятия в&nbsp;нашем
                 каталоге событий</p>
         </div>
-        <form action="#" class="form-container__form" id="form-bar" autocomplete="off">
+        <form action="#" class="form-container__form form-container__form-with-validation" id="form-bar" autocomplete="off">
             <ul class="form-container__list ">
                 <li class="form-container__list-element">
                     <label class="form-container__label form-container__label_type_text" for="working-hours">часы работы
@@ -335,7 +335,7 @@
             <p class="form-container__text">Когда люди будут покупать билеты, вам будут приходить уведомления на
                 электронную почту</p>
         </div>
-        <form action="#" class="form-container__form" autocomplete="off">
+        <form action="#" class="form-container__form form-container__form-with-validation" autocomplete="off">
             <ul class="form-container__list ">
                 <li class="form-container__chosen">
                     <div class="form-container__item">
@@ -371,7 +371,7 @@
                     <label class="form-container__label form-container__label_type_text" for="event-city">город</label>
                     <div class="form-container__item form-container__item_type_select">
                         <p class="form-container__fake-placeholder">выберите из списка</p>
-                        <select class="form-container__select" id="event-city" name="event-city" required>
+                        <select class="form-container__select" id="event-city" name="event-city">
                             <option class="form-container__select-option" value="" selected>выберите из списка</option>
                             <option class="form-container__select-option" value="Москва">Москва</option>
                             <option class="form-container__select-option" value="Санкт-Петербург">Санкт-Петербург</option>
@@ -401,7 +401,7 @@
                 <li class="form-container__list-element">
                     <label class="form-container__label form-container__label_type_text"
                            for="event-contact-name">контактное лицо</label>
-                    <input class="form-container__text-input" id="event-contact-name" minlength="5"
+                    <input class="form-container__text-input" id="event-contact-name" minlength="2"
                                name="contact-name" placeholder="введите ФИО" required type="text">
                     <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
@@ -433,7 +433,7 @@
             <p class="form-container__text">Эти данные появятся в&nbsp;описании карточки вашего мероприятия в&nbsp;нашем
                 каталоге событий</p>
         </div>
-        <form action="#" class="form-container__form" autocomplete="off">
+        <form action="#" class="form-container__form form-container__form-with-validation" autocomplete="off">
             <ul class="form-container__list ">
                 <li class="form-container__list-element">
                     <label class="form-container__label form-container__label_type_text" for="event-working-hours">время
@@ -495,7 +495,7 @@
             <p class="form-container__text">Установите пожертвование, например кусочек пирога за&nbsp;любую комфортную
                 сумму</p>
         </div>
-        <form action="#" class="form-container__form" autocomplete="off">
+        <form action="#" class="form-container__form form-container__form-with-validation" autocomplete="off">
             <ul class="form-container__list ">
                 <li class="form-container__chosen">
                     <div class="form-container__item">
@@ -509,7 +509,7 @@
                     <label class="form-container__label form-container__label_type_text" for="party-city">город</label>
                     <div class="form-container__item form-container__item_type_select">
                         <p class="form-container__fake-placeholder">выберите из списка</p>
-                        <select class="form-container__select" id="party-city" name="city" required>
+                        <select class="form-container__select" id="party-city" name="city">
                             <option class="form-container__select-option" value="" selected>выберите из списка</option>
                             <option class="form-container__select-option" value="Москва">Москва</option>
                             <option class="form-container__select-option" value="Санкт-Петербург">Санкт-Петербург</option>
@@ -560,7 +560,7 @@
                 <li class="form-container__list-element">
                     <label class="form-container__label form-container__label_type_text" for="contact-name">контактное
                         лицо</label>
-                    <input class="form-container__text-input" id="party-contact-name" minlength="5"
+                    <input class="form-container__text-input" id="party-contact-name" minlength="2"
                                name="contact-name" placeholder="введите ФИО" required type="text">
                     <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
@@ -591,7 +591,7 @@
             <p class="form-container__text">Эти данные появятся в&nbsp;описании карточки вашего мероприятия в&nbsp;нашем
                 каталоге событий</p>
         </div>
-        <form action="#" class="form-container__form" autocomplete="off">
+        <form action="#" class="form-container__form form-container__form-with-validation" autocomplete="off">
             <ul class="form-container__list ">
                 <li class="form-container__list-element">
                     <label class="form-container__label form-container__label_type_text" for="party-time">время
@@ -668,7 +668,7 @@
             <p class="form-container__text">Установите пожертвование, например кусочек пирога за&nbsp;любую комфортную
                 сумму</p>
         </div>
-        <form action="#" class="form-container__form" autocomplete="off">
+        <form action="#" class="form-container__form form-container__form-with-validation" autocomplete="off">
             <ul class="form-container__list ">
                 <li class="form-container__chosen">
                     <div class="form-container__item">
@@ -702,7 +702,7 @@
                     <label class="form-container__label form-container__label_type_text" for="other-city">город</label>
                     <div class="form-container__item form-container__item_type_select">
                         <p class="form-container__fake-placeholder">выберите из списка</p>
-                        <select class="form-container__select" id="other-city" name="city" required>
+                        <select class="form-container__select" id="other-city" name="city">
                             <option class="form-container__select-option" value="" selected>выберите из списка</option>
                             <option class="form-container__select-option" value="Москва">Москва</option>
                             <option class="form-container__select-option" value="Санкт-Петербург">Санкт-Петербург</option>
@@ -712,6 +712,7 @@
                         <li class="form-container__select-item">Москва</li>
                         <li class="form-container__select-item">Санкт-Петербург</li>
                     </ul>
+                    <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
                 <li class="form-container__list-element">
                     <label class="form-container__label form-container__label_type_text" for="place-name">название
@@ -731,7 +732,7 @@
                 <li class="form-container__list-element">
                     <label class="form-container__label form-container__label_type_text" for="contact-name">контактное
                         лицо</label>
-                        <input class="form-container__text-input" id="other-contact-name" minlength="5"
+                        <input class="form-container__text-input" id="other-contact-name" minlength="2"
                                name="contact-name" placeholder="введите ФИО" required type="text">
                     <p class="form-container__error">Поле ввода не заполнено или заполнено неверно</p>
                 </li>
@@ -762,7 +763,7 @@
             <p class="form-container__text">Эти данные появятся в&nbsp;описании карточки вашего мероприятия в&nbsp;нашем
                 каталоге событий</p>
         </div>
-        <form action="#" class="form-container__form" autocomplete="off">
+        <form action="#" class="form-container__form form-container__form-with-validation" autocomplete="off">
             <ul class="form-container__list">
                 <li class="form-container__list-element">
                     <label class="form-container__label form-container__label_type_text" for="other-time">время
